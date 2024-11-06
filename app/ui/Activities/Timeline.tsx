@@ -53,13 +53,13 @@ const events: { [event: string]: EventsDetails } = {
   },
   Ideathon: {
     event: "Ideathon",
-    date: "TBA",
+    date: "November 16th 2024",
     description:
       "In preparation for hackathon events, students from diverse programs in McGill unleash their creativity and technical skills by brainstorming clever applications and websites, which can eventually become an AKCSE summer project. Unlike hackathons, the event is open to all faculties and majors. Students have the opportunity to gain valuable feedback from professionals in YP Quebec and experience practical tools such as Figma.",
     image1: "/activities/Ideathon/image1.jpg",
     image2: "/activities/Ideathon/image2.jpg",
     image3: "/activities/Ideathon/image3.jpg",
-    registrationForm: "",
+    registrationForm: "https://forms.gle/r4AGwswee4rUT3Rk7",
     deadline: "",
   },
   "Christmas Party": {
