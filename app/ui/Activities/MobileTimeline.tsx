@@ -46,7 +46,7 @@ const events: { [event: string]: EventsDetails } = {
   },
   "YG Seminar": {
     event: "YG Seminar",
-    date: "October 25th 2024",
+    date: "October 18th 2024 & October 25th 2024",
     description:
       "Opportunity for students to gain an image of what it's like to be in research or industry by listening to their journey.",
     image1: "/activities/Seminar/image1.jpg",

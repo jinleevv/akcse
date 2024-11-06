@@ -60,7 +60,7 @@ const events: { [event: string]: EventsDetails } = {
     image2: "/activities/Ideathon/image2.jpg",
     image3: "/activities/Ideathon/image3.jpg",
     registrationForm: "https://forms.gle/r4AGwswee4rUT3Rk7",
-    deadline: "",
+    deadline: "November 15th 2024",
   },
   "Christmas Party": {
     event: "Christmas Party",
@@ -75,7 +75,7 @@ const events: { [event: string]: EventsDetails } = {
   },
   "YG Seminar": {
     event: "YG Seminar",
-    date: "October 25th 2024",
+    date: "October 18th 2024 & October 25th 2024",
     description:
       "The YG seminar invites professionals from different STEM fields such as medicine, IT, engineering, and natural sciences. This is an excellent opportunity for students to gain a bigger picture of what it's like to be in research or industry by listening to their journey and firsthand experience over the years. The seminar is also an excellent chance for students to directly ask presenters in a more approachable environment.",
     image1: "/activities/Seminar/image1.jpg",
