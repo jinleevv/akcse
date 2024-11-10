@@ -1,6 +1,8 @@
 import MainLogo from "./ui/Home/mainLogo";
 import MainText from "./ui/Home/mainText";
 import Head from "next/head";
+import Image from "next/image";
+import NewMainLogo from "./ui/Home/newMainLogo";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -26,15 +28,18 @@ export default function Home() {
           property="og:description"
           content="Official page of AKCSE McGill."
         />
-        <meta property="og:image" content="https://akcsemcgill.ca/AKCSE_McGill.png" />
+        <meta
+          property="og:image"
+          content="https://akcsemcgill.ca/AKCSE_McGill.png"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </Head>
       <section className="lg:flex w-full h-full">
-        <div className="w-full lg:w-1/2 h-[400px] md:h-[600px] lg:h-[770px] xl:h-[790px] bg-white rounded-3xl shadow-lg lg:ml-3 mt-2 p-2 lg:p-0">
-          <MainLogo />
+        <div className="w-1/2 h-full">
+          <NewMainLogo />
         </div>
         <div className="flex w-full lg:w-1/2 h-full lg:mt-auto mt-10 p-2 lg:p-0 mb-10">
           <MainText />

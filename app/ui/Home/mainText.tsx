@@ -13,7 +13,7 @@ export default function MainText() {
       transition={{ duration: 0.4, ease: "easeOut" }}
       className="grid w-full lg:w-5/6 text-center m-auto"
     >
-      <Label className="text-3xl">Welcome to AKCSE McGill</Label>
+      <Label className="text-4xl font-bold">Welcome to AKCSE McGill</Label>
       <motion.div
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
@@ -37,7 +37,7 @@ export default function MainText() {
             variant="outline"
             className="w-3/5 m-auto border-1.5 border-red-600 shadow-lg text-red-800 hover:text-red-900"
           >
-            Learn about AKCSE
+            Join AKCSE McGill
           </Button>
         </Link>
       </motion.div>
