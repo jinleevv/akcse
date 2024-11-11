@@ -79,6 +79,10 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className={`${inter.className} h-screen`}>
         <nav className="flex w-full justify-between p-3">
