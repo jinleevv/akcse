@@ -19,6 +19,15 @@ const config: Config = {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
+      keyframes: {
+        slideLoop: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" }, // Shift by half the width (duplicated content)
+        },
+      },
+      animation: {
+        slideLoop: "slideLoop 20s linear infinite",
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",

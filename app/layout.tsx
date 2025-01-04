@@ -27,10 +27,6 @@ const schemaData = {
 
 const navMenuItems = [
   {
-    title: "About",
-    path: "/about",
-  },
-  {
     title: "Events",
     path: "/events",
   },
@@ -86,17 +82,17 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} h-screen`}>
         <nav className="flex w-full justify-between p-3">
-          <div>
+          <div className="-mt-7 h-12 w-24">
             <Link href="/">
               <Image
-                src="/logo.png"
-                width={140}
-                height={100}
+                src="/AKCSE_McGill.png"
+                height={120}
+                width={120}
                 alt="AKCSE McGill"
               />
             </Link>
           </div>
-          <div className="lg:flex hidden m-auto">
+          <div className="lg:flex  hidden ml-auto">
             {navMenuItems.map((item) => {
               return <MenuLink item={item} key={item.path} />;
             })}
@@ -113,7 +109,7 @@ export default function RootLayout({
           </div>
         </NextUIProvider>
 
-        <footer className="flex w-full border-t-1">
+        {/* <footer className="flex w-full border-t-1">
           <div className="flex w-full">
             <div className="w-full h-full ml-1 justify-start">
               <Label className="text-xs font-light">
@@ -121,7 +117,7 @@ export default function RootLayout({
               </Label>
             </div>
           </div>
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
