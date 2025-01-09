@@ -66,9 +66,9 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </Head>
-      <section className="flex w-full h-full">
+      <section className="flex flex-col md:flex-row w-full h-full">
         {/* Left Side */}
-        <div className="w-1/2 h-fit flex flex-col justify-center items-center text-center translate-y-1/2">
+        <div className="w-full md:w-1/2 h-fit flex flex-col justify-center items-center text-center translate-y-0 md:translate-y-1/2">
           <div className="absolute w-full h-60 bg-[#6A8CAF] blur-[150px] -z-10"></div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -76,10 +76,13 @@ export default function Home() {
             transition={{ duration: 1 }}
             className="-space-y-5"
           >
+            <div className="mt-6 md:mt-0">
             <div>
-              <Label className="text-7xl font-extrabold">Welcome To</Label>
+              <Label className="text-6xl md:text-7xl font-extrabold">Welcome To</Label>
             </div>
-            <div className="flex items-center h-72 w-72">
+            </div>
+            
+            <div className="flex items-center h-48 w-48 md:h-72 md:w-72">
               <Image
                 src="/AKCSE_McGill.png"
                 alt="AKCSE McGill"
@@ -100,39 +103,41 @@ export default function Home() {
         </div>
 
         {/* Right Side */}
-        <div className="w-1/2 h-fit flex justify-center items-center translate-y-1/3 -space-x-16">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="-mt-96"
-          >
-            <Image
-              src="/mcgill_school_logo.png"
-              alt="McGill Logo"
-              height={120}
-              width={120}
-              className="object-cover"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-            className="flex h-[500px] w-[500px] rounded-full overflow-hidden"
-          >
-            <Image
-              src="/mcgill_landscape.jpg"
-              alt="McGill Building"
-              height={800}
-              width={800}
-              className="object-cover"
-            />
-          </motion.div>
-        </div>
+          <div className="w-full md:w-1/2 h-fit flex justify-center items-center mt-8 md:mt-0 md:translate-y-1/3 md:-space-x-16">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="md:-mt-96"
+            >
+              <Image
+                src="/mcgill_school_logo.png"
+                alt="McGill Logo"
+                height={120}
+                width={120}
+                className="hidden md:object-cover"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+              className="flex w-full md:w-[500px] md:h-[500px] rounded-3xl md:rounded-full overflow-hidden"
+            >
+              <Image
+                src="/mcgill_landscape.jpg"
+                alt="McGill Building"
+                width={800}
+                height={800}
+                className="object-cover w-[90%] h-auto mx-auto md:w-full md:h-full rounded-xl md:rounded-none"
+              />
+            </motion.div>
+          </div>
       </section>
-      <div className="-mt-10 mb-16 overflow-hidden w-full h-16">
-        <div className="flex animate-slideLoop w-[200%]">
+
+      <div className="mt-12 md:-mt-10  mb-5 md:mb-12 overflow-hidden w-full h-16 relative">
+        <div className="flex animate-slideLoop w-full md:w-[200%] h-full absolute top-0 left-0">
           {/* Original Content */}
           <div className="flex space-x-10 w-[50%]">
             <span className="text-lg font-semibold whitespace-nowrap">
@@ -161,7 +166,7 @@ export default function Home() {
             </span>
           </div>
           {/* Duplicated Content */}
-          <div className="flex space-x-10 w-[50%]">
+          <div className="hidden md:flex space-x-10 w-[50%]">
             <span className="text-lg font-semibold whitespace-nowrap">
               Computer Science
             </span>
@@ -192,77 +197,89 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="flex flex-col w-full h-full">
-        <div className="grid grid-cols-2 w-full h-full">
-          <div className="h-fit">
+      
+      
+      <section className="flex flex-col w-full h-fit md:h-full px-4 md:px-8">
+        {/* Top Content: Two sections stacked on mobile, side-by-side on md+ */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-fit">
+          {/* Top Section (mobile) / Left Column (desktop) */}
+          <div className="h-fit flex justify-center items-center">
             <RotateNews />
           </div>
-          <div className="flex flex-col w-full h-fit justify-center">
+
+          {/* Bottom Section (mobile) / Right Column (desktop) */}
+          <div className="flex flex-col w-full h-fit justify-center items-center">
             <motion.div
               initial={{ opacity: 1 }}
-              animate={{
-                opacity: [1, 0.5, 1], // Opacity animation: fully visible -> semi-transparent -> fully visible
-              }}
+              animate={{ opacity: [1, 0.5, 1] }} 
               transition={{
-                duration: 2, // Time for one blink cycle
-                repeat: Infinity, // Infinite loop
+                duration: 2,
+                repeat: Infinity,
               }}
             >
-              <div className="flex w-full justify-center">
-                <Label className="text-2xl font-outfit font-bold">
+              <div className="flex w-full justify-center items-center gap-2 mt-20 md:mt-0">
+                <Label className="text-xl md:text-2xl font-outfit font-bold">
                   Check Out Our News
                 </Label>
                 <div className="mt-1.5">
-                  <LiaArrowDownSolid size={25} />
+                  <LiaArrowDownSolid size={20} className="md:text-[25px]" />
                 </div>
               </div>
             </motion.div>
-            <div className="flex w-full h-fit justify-center items-center">
+
+            <div className="flex w-full h-fit justify-center items-center mt-4">
+              {/* Responsive image: full width on mobile, up to 600px on desktop */}
               <Image
                 src="/akcsebition.png"
                 alt="AKCSEBITION"
                 height={600}
                 width={600}
-                className="object-cover"
+                className="object-cover w-full max-w-[600px]"
               />
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-full h-full space-y-1.5 text-center">
-          <Label className="w-full h-fit text-2xl font-outfit font-bold">
+
+        {/* "What Is AKCSE?" Section */}
+        <div className="flex flex-col w-full h-fit space-y-3 text-center mt-12 md:mt-8">
+          <Label className="w-full text-xl md:text-2xl font-outfit font-bold">
             What Is AKCSE?
           </Label>
-          <div className="flex w-2/3 h-fit ml-auto mr-auto">
-            <Label className="font-outfit text-lg">
+          <div className="mx-auto w-full md:w-2/3">
+            <Label className="font-outfit text-base md:text-lg leading-relaxed">
+              {/* Your long description text */}
               The Association of Korean-Canadian Scientists and Engineers
-              (AKCSE) is a non-profit organization established in 1986. It
-              serves mainly as a grounds for networking between Korean-Canadians
-              in the field to develop their full career potential. AKCSE
-              consists of 17 university school chapters and 12 local chapters
-              across the provinces of Canada, with its headquarters based in
-              Ontario. The chapters are divided based on different stages in
-              one's career, notably the undergraduate Young Generation (YG), the
-              Young Professionals (YP), and the local chapter. AKCSE is
-              affiliated with The Ministry of Science and ICT of the Korean
-              Government, the Korean Federation of Science & Technology
-              Societies, and many different organizations. With these
-              partnerships formed with reliable science and engineering
-              institutions in Korea, AKCSE proudly provides members with
-              experiences in conferences and research/networking forums held
-              annually. Additionally, students can apply for the KCSSF
-              Scholarship, granting 12 students scholarships valued up to
-              $3,000.
+                    (AKCSE) is a non-profit organization established in 1986. It
+                    serves mainly as a grounds for networking between Korean-Canadians
+                    in the field to develop their full career potential. AKCSE
+                    consists of 17 university school chapters and 12 local chapters
+                    across the provinces of Canada, with its headquarters based in
+                    Ontario. The chapters are divided based on different stages in
+                    one's career, notably the undergraduate Young Generation (YG), the
+                    Young Professionals (YP), and the local chapter. AKCSE is
+                    affiliated with The Ministry of Science and ICT of the Korean
+                    Government, the Korean Federation of Science & Technology
+                    Societies, and many different organizations. With these
+                    partnerships formed with reliable science and engineering
+                    institutions in Korea, AKCSE proudly provides members with
+                    experiences in conferences and research/networking forums held
+                    annually. Additionally, students can apply for the KCSSF
+                    Scholarship, granting 12 students scholarships valued up to
+                    $3,000.
             </Label>
           </div>
         </div>
       </section>
-      <section className="flex flex-col w-full mb-28 justify-center items-center text-center">
+
+
+      {/* Latest News */}
+      <section className="flex flex-col w-full mt-10 md:mt-0 mb-10 md:mb-28 justify-center items-center text-center">
         <Label className="text-2xl font-outfit font-bold">Latest Events</Label>
-        <div className="flex mt-2 gap-3">
+        <div className="flex flex-wrap mt-2 gap-3">
           {events.map((event, index) => (
             <div
               key={index}
-              className="w-[360px] bg-white rounded-md items-center text-center p-4"
+              className="w-full md:w-[360px] bg-white rounded-md items-center text-center p-4"
             >
               {/* Image Placeholder */}
               <Image
@@ -285,6 +302,8 @@ export default function Home() {
           ))}
         </div>
       </section>
+     
+     
       <footer className="w-full bg-white text-center py-6 border-t-1">
         {/* Text Section */}
         <div className="text-sm font-medium text-gray-700">

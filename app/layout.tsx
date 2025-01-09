@@ -81,14 +81,15 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} h-screen`}>
-        <nav className="flex w-full justify-between p-3">
-          <div className="-mt-7 h-12 w-24">
+        <nav className="flex w-full justify-between p-3 mt-4 md:mt-0">
+          <div className="-mt-7 md:-mt-7 h-12 w-24">
             <Link href="/">
               <Image
                 src="/AKCSE_McGill.png"
                 height={120}
                 width={120}
                 alt="AKCSE McGill"
+                className="transform -translate-y-2 md:transform-none"
               />
             </Link>
           </div>
