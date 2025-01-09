@@ -272,7 +272,7 @@ export default function Home() {
       </section>
 
 
-      {/* Latest News */}
+      {/* Latest news */}
       <section className="flex flex-col w-full mt-10 md:mt-0 mb-10 md:mb-28 justify-center items-center text-center">
         <Label className="text-2xl font-outfit font-bold">Latest Events</Label>
         <div className="flex flex-wrap mt-2 gap-3">
