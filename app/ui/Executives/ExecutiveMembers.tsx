@@ -12,7 +12,7 @@ export default function ExecutiveMembers() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   return (
-    <div className="flex flex-col w-full h-full rounded-lg shadow-lg">
+    <div className="flex flex-col w-full h-full rounded-lg shadow-none">
       <div>
         <ul className="flex w-full list-none p-0 m-0 text-[14px] font-medium">
           {tabs.map((item) => (

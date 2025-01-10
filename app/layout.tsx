@@ -27,10 +27,6 @@ const schemaData = {
 
 const navMenuItems = [
   {
-    title: "About",
-    path: "/about",
-  },
-  {
     title: "Events",
     path: "/events",
   },
@@ -79,20 +75,25 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
         ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
       </head>
       <body className={`${inter.className} h-screen`}>
-        <nav className="flex w-full justify-between p-3">
-          <div>
+        <nav className="flex w-full justify-between p-3 mt-4 md:mt-0">
+          <div className="-mt-7 md:-mt-7 h-12 w-24">
             <Link href="/">
               <Image
-                src="/logo.png"
-                width={140}
-                height={100}
+                src="/AKCSE_McGill.png"
+                height={120}
+                width={120}
                 alt="AKCSE McGill"
+                className="transform -translate-y-2 md:transform-none"
               />
             </Link>
           </div>
-          <div className="lg:flex hidden m-auto">
+          <div className="lg:flex  hidden ml-auto">
             {navMenuItems.map((item) => {
               return <MenuLink item={item} key={item.path} />;
             })}
@@ -109,7 +110,7 @@ export default function RootLayout({
           </div>
         </NextUIProvider>
 
-        <footer className="flex w-full border-t-1">
+        {/* <footer className="flex w-full border-t-1">
           <div className="flex w-full">
             <div className="w-full h-full ml-1 justify-start">
               <Label className="text-xs font-light">
@@ -117,7 +118,7 @@ export default function RootLayout({
               </Label>
             </div>
           </div>
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
