@@ -25,10 +25,6 @@ const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 const navMenuItems = [
   {
-    title: "About",
-    path: "/about",
-  },
-  {
     title: "Events",
     path: "/events",
   },
@@ -50,19 +46,6 @@ export const MenuItem = ({ toggleOpen }: { toggleOpen: () => void }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div className="rounded-lg w-[200px] h-[45px] flex-1 mb-2" style={style}>
-        <div className="flex w-full h-full justify-end">
-          <Link href="/about" className="w-full">
-            <Button
-              onClick={toggleOpen}
-              variant="ghost"
-              className="w-full h-full text-white"
-            >
-              About
-            </Button>
-          </Link>
-        </div>
-      </div>
       <div className="rounded-lg w-[200px] h-[45px] flex-1 mb-2" style={style}>
         <div className="flex w-full h-full justify-end">
           <Link href="/events" className="w-full">

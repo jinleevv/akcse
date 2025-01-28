@@ -66,9 +66,9 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </Head>
-      <section className="flex flex-col md:flex-row w-full h-full">
+      <section className="flex flex-col lg:flex-row w-full h-full">
         {/* Left Side */}
-        <div className="w-full md:w-1/2 h-fit flex flex-col justify-center items-center text-center translate-y-0 md:translate-y-1/2">
+        <div className="w-full lg:w-1/2 mt-14 lg:mt-0 h-fit flex flex-col justify-center items-center text-center translate-y-0 lg:translate-y-1/2">
           <div className="absolute w-full h-60 bg-[#6A8CAF] blur-[150px] -z-10"></div>
           <motion.div
             initial={{ opacity: 0 }}
@@ -77,11 +77,13 @@ export default function Home() {
             className="-space-y-5"
           >
             <div className="mt-6 md:mt-0">
-            <div>
-              <Label className="text-6xl md:text-7xl font-extrabold">Welcome To</Label>
+              <div>
+                <Label className="text-6xl md:text-7xl font-extrabold">
+                  Welcome To
+                </Label>
+              </div>
             </div>
-            </div>
-            
+
             <div className="flex items-center h-48 w-48 md:h-72 md:w-72">
               <Image
                 src="/AKCSE_McGill.png"
@@ -103,105 +105,161 @@ export default function Home() {
         </div>
 
         {/* Right Side */}
-          <div className="w-full md:w-1/2 h-fit flex justify-center items-center mt-8 md:mt-0 md:translate-y-1/3 md:-space-x-16">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="md:-mt-96"
-            >
-              <Image
-                src="/mcgill_school_logo.png"
-                alt="McGill Logo"
-                height={120}
-                width={120}
-                className="hidden md:object-cover"
-              />
-            </motion.div>
+        <div className="w-full lg:w-1/2 h-fit flex justify-center items-center mt-8 lg:mt-0 lg:translate-y-1/3 lg:-space-x-16">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="lg:-mt-96"
+          >
+            <Image
+              src="/mcgill_school_logo.png"
+              alt="McGill Logo"
+              height={120}
+              width={120}
+              className="hidden lg:object-cover"
+            />
+          </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              className="flex w-full md:w-[500px] md:h-[500px] rounded-3xl md:rounded-full overflow-hidden"
-            >
-              <Image
-                src="/mcgill_landscape.jpg"
-                alt="McGill Building"
-                width={800}
-                height={800}
-                className="object-cover w-[90%] h-auto mx-auto md:w-full md:h-full rounded-xl md:rounded-none"
-              />
-            </motion.div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="flex w-full lg:w-[500px] lg:h-[500px] rounded-3xl lg:rounded-full overflow-hidden"
+          >
+            <Image
+              src="/mcgill_landscape.jpg"
+              alt="McGill Building"
+              width={800}
+              height={800}
+              className="object-cover w-[90%] h-auto mx-auto lg:w-full lg:h-full rounded-xl lg:rounded-none"
+            />
+          </motion.div>
+        </div>
       </section>
 
-      <div className="mt-12 md:-mt-10  mb-5 md:mb-12 overflow-hidden w-full h-16 relative">
-        <div className="flex animate-slideLoop w-full md:w-[200%] h-full absolute top-0 left-0">
+      <div className="relative mt-12 lg:-mt-10 mb-5 lg:mb-12 overflow-hidden w-full h-16">
+        <div className="flex animate-slideLoop w-full lg:w-[200%] h-full absolute top-0 left-0">
           {/* Original Content */}
-          <div className="flex space-x-10 w-[50%]">
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Computer Science
+          <div className="flex space-x-10 h-10 w-[50%]">
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/workstation.png"
+                alt="workstation"
+              />
+              <div className="my-auto">Computer Science</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Cognitive Science
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/learning--v1.png"
+                alt="learning--v1"
+              />
+              <div className="my-auto">Cognitive Science</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Mathematics
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/calculator.png"
+                alt="calculator"
+              />
+              <div className="my-auto">Mathematics</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Biochemistry
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/biotech--v1.png"
+                alt="biotech--v1"
+              />
+              <div className="my-auto">Biochemistry</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Electrical Engineering
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/electronics.png"
+                alt="electronics"
+              />
+              <div className="my-auto">Engineering</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Pharmacology
-            </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Neuroscience
-            </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Chemical engineering
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/doctors-bag.png"
+                alt="doctors-bag"
+              />
+              <div className="my-auto">Pharmacology</div>
             </span>
           </div>
           {/* Duplicated Content */}
-          <div className="hidden md:flex space-x-10 w-[50%]">
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Computer Science
+          <div className="hidden lg:flex space-x-10 h-10 w-[50%]">
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/workstation.png"
+                alt="workstation"
+              />
+              <div className="my-auto">Computer Science</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Cognitive Science
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/learning--v1.png"
+                alt="learning--v1"
+              />
+              <div className="my-auto">Cognitive Science</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Mathematics
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/calculator.png"
+                alt="calculator"
+              />
+              <div className="my-auto">Mathematics</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Biochemistry
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/biotech--v1.png"
+                alt="biotech--v1"
+              />
+              <div className="my-auto">Biochemistry</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Electrical Engineering
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/electronics.png"
+                alt="electronics"
+              />
+              <div className="my-auto">Engineering</div>
             </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Pharmacology
-            </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Neuroscience
-            </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Software Engineering
-            </span>
-            <span className="text-lg font-semibold whitespace-nowrap">
-              Chemical engineering
+            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
+              <img
+                width="50"
+                height="50"
+                src="https://img.icons8.com/isometric/50/doctors-bag.png"
+                alt="doctors-bag"
+              />
+              <div className="my-auto">Pharmacology</div>
             </span>
           </div>
         </div>
       </div>
-      
-      
-      <section className="flex flex-col w-full h-fit md:h-full px-4 md:px-8">
+
+      <section className="flex flex-col w-full h-fit px-4 lg:px-8">
         {/* Top Content: Two sections stacked on mobile, side-by-side on md+ */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full h-fit">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 w-full h-fit mt-10">
           {/* Top Section (mobile) / Left Column (desktop) */}
           <div className="h-fit flex justify-center items-center">
             <RotateNews />
@@ -211,7 +269,7 @@ export default function Home() {
           <div className="flex flex-col w-full h-fit justify-center items-center">
             <motion.div
               initial={{ opacity: 1 }}
-              animate={{ opacity: [1, 0.5, 1] }} 
+              animate={{ opacity: [1, 0.5, 1] }}
               transition={{
                 duration: 2,
                 repeat: Infinity,
@@ -241,7 +299,7 @@ export default function Home() {
         </div>
 
         {/* "What Is AKCSE?" Section */}
-        <div className="flex flex-col w-full h-fit space-y-3 text-center mt-12 md:mt-8">
+        <div className="flex flex-col w-full h-fit space-y-3 text-center mt-28 md:mt-44">
           <Label className="w-full text-xl md:text-2xl font-outfit font-bold">
             What Is AKCSE?
           </Label>
@@ -249,61 +307,62 @@ export default function Home() {
             <Label className="font-outfit text-base md:text-lg leading-relaxed">
               {/* Your long description text */}
               The Association of Korean-Canadian Scientists and Engineers
-                    (AKCSE) is a non-profit organization established in 1986. It
-                    serves mainly as a grounds for networking between Korean-Canadians
-                    in the field to develop their full career potential. AKCSE
-                    consists of 17 university school chapters and 12 local chapters
-                    across the provinces of Canada, with its headquarters based in
-                    Ontario. The chapters are divided based on different stages in
-                    one's career, notably the undergraduate Young Generation (YG), the
-                    Young Professionals (YP), and the local chapter. AKCSE is
-                    affiliated with The Ministry of Science and ICT of the Korean
-                    Government, the Korean Federation of Science & Technology
-                    Societies, and many different organizations. With these
-                    partnerships formed with reliable science and engineering
-                    institutions in Korea, AKCSE proudly provides members with
-                    experiences in conferences and research/networking forums held
-                    annually. Additionally, students can apply for the KCSSF
-                    Scholarship, granting 12 students scholarships valued up to
-                    $3,000.
+              (AKCSE) is a non-profit organization established in 1986. It
+              serves mainly as a grounds for networking between Korean-Canadians
+              in the field to develop their full career potential. AKCSE
+              consists of 17 university school chapters and 12 local chapters
+              across the provinces of Canada, with its headquarters based in
+              Ontario. The chapters are divided based on different stages in
+              one's career, notably the undergraduate Young Generation (YG), the
+              Young Professionals (YP), and the local chapter. AKCSE is
+              affiliated with The Ministry of Science and ICT of the Korean
+              Government, the Korean Federation of Science & Technology
+              Societies, and many different organizations. With these
+              partnerships formed with reliable science and engineering
+              institutions in Korea, AKCSE proudly provides members with
+              experiences in conferences and research/networking forums held
+              annually. Additionally, students can apply for the KCSSF
+              Scholarship, granting 12 students scholarships valued up to
+              $3,000.
             </Label>
           </div>
         </div>
       </section>
 
-
       {/* Latest news */}
-      <section className="flex flex-col w-full mt-10 md:mt-0 mb-10 md:mb-28 justify-center items-center text-center">
+      <section className="flex flex-col w-full mt-20 lg:mt-40 mb-10 lg:mb-28 justify-center items-center text-center">
         <Label className="text-2xl font-outfit font-bold">Latest Events</Label>
         <div className="flex flex-wrap mt-2 gap-3">
           {events.map((event, index) => (
             <div
               key={index}
-              className="w-full md:w-[360px] bg-white rounded-md items-center text-center p-4"
+              className="w-full lg:w-[360px] bg-white rounded-md items-center justify-center text-center p-4"
             >
-              {/* Image Placeholder */}
-              <Image
-                src={event.image}
-                alt={event.title}
-                width={320}
-                height={192}
-                className="w-full h-48 object-cover rounded-md"
-              />
+              <div className="w-full h-full justify-center items-center">
+                {/* Image Placeholder */}
+                <Image
+                  src={event.image}
+                  alt={event.title}
+                  width={320}
+                  height={192}
+                  className="w-11/12 lg:w-full h-72 object-cover rounded-md mx-auto"
+                />
+                {/* Title */}
+                <h3 className="mt-4 text-lg font-bold">{event.title}</h3>
 
-              {/* Title */}
-              <h3 className="mt-4 text-lg font-bold">{event.title}</h3>
+                {/* Date */}
+                <p className="mt-2 text-sm text-gray-500">{event.date}</p>
 
-              {/* Date */}
-              <p className="mt-2 text-sm text-gray-500">{event.date}</p>
-
-              {/* Description */}
-              <p className="mt-4 text-sm text-gray-700">{event.description}</p>
+                {/* Description */}
+                <p className="mt-4 text-sm text-gray-700">
+                  {event.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
       </section>
-     
-     
+
       <footer className="w-full bg-white text-center py-6 border-t-1">
         {/* Text Section */}
         <div className="text-sm font-medium text-gray-700">
@@ -312,7 +371,6 @@ export default function Home() {
         </div>
         {/* Icons Section */}
         <div className="flex justify-center mt-4 space-x-6">
-          <FaTelegramPlane className="text-2xl text-gray-700 hover:text-gray-900 cursor-pointer" />
           <FaInstagram className="text-2xl text-gray-700 hover:text-gray-900 cursor-pointer" />
           <FaLinkedin className="text-2xl text-gray-700 hover:text-gray-900 cursor-pointer" />
         </div>
