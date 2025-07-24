@@ -1,4 +1,3 @@
-import { Label } from "@/components/ui/label";
 import ProjectsDisplay from "../ui/Projects/ProjectsDisplay";
 import HearderText from "../ui/Projects/HeaderText";
 
