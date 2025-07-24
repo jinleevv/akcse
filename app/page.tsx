@@ -68,7 +68,7 @@ export default function Home() {
       <section className="flex flex-col lg:flex-row w-full h-full">
         {/* Left Side */}
         <div className="w-full lg:w-1/2 mt-14 lg:mt-0 h-fit flex flex-col justify-center items-center text-center translate-y-0 lg:translate-y-1/2">
-          <div className="absolute w-full h-60 bg-[#db855a] blur-[180px] -z-10"></div>
+          <div className="absolute w-full h-60 bg-[#dba35a] blur-[180px] -z-10"></div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
