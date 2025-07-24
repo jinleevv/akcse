@@ -105,6 +105,7 @@ export default function Home() {
                   href="https://linktr.ee/akcsemcgill"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full"
                 >
                   <Button className="w-3/4 px-6 py-2">Join AKCSE McGill</Button>
                 </Link>
