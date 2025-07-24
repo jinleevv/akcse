@@ -66,7 +66,7 @@ export default function Home() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />
       </Head>
-      <section className="flex flex-col lg:flex-row w-full h-full">
+      <section className="flex flex-col lg:flex-row w-full h-full mt-7 lg:-mt-12 2xl:-mt-2">
         {/* Left Side */}
         <div className="w-full lg:w-1/2 mt-14 lg:mt-0 h-fit flex flex-col justify-center items-center text-center translate-y-0 lg:translate-y-1/2">
           <div className="absolute w-full h-60 bg-[#dba35a] blur-[180px] -z-10"></div>
@@ -100,7 +100,7 @@ export default function Home() {
                 </Label>
               </div>
 
-              <div className="flex w-full justify-center">
+              <div className="flex w-full justify-center z-20">
                 <Link
                   href="https://linktr.ee/akcsemcgill"
                   target="_blank"
@@ -149,7 +149,7 @@ export default function Home() {
       </section>
 
       <motion.div
-        className="hidden lg:flex justify-center mb-7"
+        className="hidden lg:flex justify-center mb-7 -mt-12"
         initial={{ opacity: 0.6, scale: 1 }}
         animate={{
           opacity: [0.6, 1, 0.6],
