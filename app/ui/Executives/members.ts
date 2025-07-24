@@ -19,7 +19,7 @@ export interface Executive {
 
 export const executiveMembers: Executive[] = [
   {
-    icon: "🍅",
+    icon: "💎",
     label: "Co-Presidents",
     names: ["Jinwon Lee", "Ahreum Lee"],
     images: {},
@@ -45,7 +45,7 @@ export const executiveMembers: Executive[] = [
     },
   },
   {
-    icon: "🥬",
+    icon: "📢",
     label: "VP Communications",
     names: ["Minseo Park", "Dowoo Kim"],
     images: {},
@@ -70,7 +70,7 @@ export const executiveMembers: Executive[] = [
     },
   },
   {
-    icon: "🧀",
+    icon: "🏦",
     label: "VP Finance",
     names: ["Taewon Hwang", "Sungji Song"],
     images: {},
@@ -95,7 +95,7 @@ export const executiveMembers: Executive[] = [
     },
   },
   {
-    icon: "🥕",
+    icon: "🎉",
     label: "VP Events",
     names: ["Dana Lee", "Allison Kim"],
     images: {},
@@ -122,7 +122,7 @@ export const executiveMembers: Executive[] = [
     },
   },
   {
-    icon: "🍌",
+    icon: "🌐",
     label: "VP External",
     names: ["ChaeYoung Kim"],
     images: {},
@@ -138,7 +138,7 @@ export const executiveMembers: Executive[] = [
     },
   },
   {
-    icon: "🫐",
+    icon: "🏠",
     label: "VP Internal",
     names: ["KangHyu Lee", "Chaeyeon Kang"],
     images: {},
@@ -165,7 +165,7 @@ export const executiveMembers: Executive[] = [
     },
   },
   {
-    icon: "🥂",
+    icon: "🎓",
     label: "First Year Representative",
     names: ["Joongi Lee"],
     images: {},
@@ -204,14 +204,5 @@ function loadImagesForMember(executiveMembers: Executive[]) {
 
 loadImagesForMember(executiveMembers);
 
-const [pres, communications, finance, events, external, internal, fyr] =
+export const [pres, communications, finance, events, external, internal, fyr] =
   executiveMembers;
-export const initialTabs = [
-  pres,
-  communications,
-  finance,
-  events,
-  external,
-  internal,
-  fyr,
-];

@@ -10,7 +10,8 @@ const projectsInfo = {
   AKCSE_McGill_Website: {
     image: "/AKCSE_McGill.png",
     project: "AKCSE McGill Website",
-    contributers: "Jinwon Lee, Taewon Hwang, Dana Lee, Ahreum Lee, Junsoo Kim, Dowoo Kim, KangHyu Lee",
+    contributers:
+      "Jinwon Lee, Taewon Hwang, Dana Lee, Ahreum Lee, Junsoo Kim, Dowoo Kim, KangHyu Lee",
     purpose:
       "It aims to provide an platform where members can be easily updated with AKCSE events. It also encourages the members to contribute to the website to familiarize them with GitHub and web development. This project will ultimately create a community where members can learn to collaborate and improve their skill sets.",
     achievements:
@@ -34,8 +35,10 @@ const projectsInfo = {
     project: "Orally",
     contributers:
       "Emma Sihyun Lee, Yoon Choi, Minhui Roh, Taewon Hwang, Tevin Choi",
-    purpose: "Many people are hesitant to visit their dentist due to dentophobia or the high cost of treatments, making it even more difficult for them to learn about oral health and manage their conditions. Orofacial pain can be exceptionally excruciating. It is, therefore, important to assess this pain in a timely manner to ensure that appropriate treatment is delivered promptly. Seeking medical help as soon as possible is crucial since the orofacial pain they suffer could also be a symptom of referred pain from other body parts.",
-    achievements: "We were successfully able to develop an app that users can mentally prepare themselves for their visit, better understand their conditions, and learn more about the conditions they are suspected of having. This helps users to reduce anxiety and stress caused by dental visits and encourages users to seek appropriate treatment by providing a simple and efficient assessment tool of oral health symptoms, our app aims to help reduce oral health disparities and promote more significant oral health equity. Additionally, the app allows users to record their symptoms and pain level each day, which they can bring to their dentist for a more precise and accurate diagnosis.",
+    purpose:
+      "Many people are hesitant to visit their dentist due to dentophobia or the high cost of treatments, making it even more difficult for them to learn about oral health and manage their conditions. Orofacial pain can be exceptionally excruciating. It is, therefore, important to assess this pain in a timely manner to ensure that appropriate treatment is delivered promptly. Seeking medical help as soon as possible is crucial since the orofacial pain they suffer could also be a symptom of referred pain from other body parts.",
+    achievements:
+      "We were successfully able to develop an app that users can mentally prepare themselves for their visit, better understand their conditions, and learn more about the conditions they are suspected of having. This helps users to reduce anxiety and stress caused by dental visits and encourages users to seek appropriate treatment by providing a simple and efficient assessment tool of oral health symptoms, our app aims to help reduce oral health disparities and promote more significant oral health equity. Additionally, the app allows users to record their symptoms and pain level each day, which they can bring to their dentist for a more precise and accurate diagnosis.",
     description:
       "Orally is an app designed to address the oral health disparities that exist in our society and promote oral health equity. Many individuals hesitate to visit the dentist due to dentophobia or the high cost of treatments, resulting in inadequate oral health management. This app aims to empower users by providing them with a reliable assessment tool for orofacial pain and related conditions.",
   },
@@ -46,9 +49,9 @@ export default function ProjectsDisplay() {
     <section className="grid lg:grid-cols-2 w-full h-full gap-3">
       {Object.entries(projectsInfo).map(([projectName, details]) => (
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 100, damping: 20 }}
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2, ease: "easeOut" }}
           className="flex w-full rounded-lg border-1"
         >
           <div className="w-48 lg:w-96 h-72 overflow-hidden">
