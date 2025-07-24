@@ -5,9 +5,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import RotateNews from "./ui/Home/RotateNews";
 import { LiaArrowDownSolid } from "react-icons/lia";
-import { FaTelegramPlane, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -69,7 +68,7 @@ export default function Home() {
       <section className="flex flex-col lg:flex-row w-full h-full">
         {/* Left Side */}
         <div className="w-full lg:w-1/2 mt-14 lg:mt-0 h-fit flex flex-col justify-center items-center text-center translate-y-0 lg:translate-y-1/2">
-          <div className="absolute w-full h-60 bg-[#6A8CAF] blur-[150px] -z-10"></div>
+          <div className="absolute w-full h-60 bg-[#db855a] blur-[180px] -z-10"></div>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -78,7 +77,7 @@ export default function Home() {
           >
             <div className="mt-6 md:mt-0">
               <div>
-                <Label className="text-6xl md:text-7xl font-extrabold">
+                <Label className="text-5xl md:text-7xl font-extrabold">
                   Welcome To
                 </Label>
               </div>
@@ -93,10 +92,13 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col w-full h-full space-y-2">
-              <Label className="text-lg text-gray-500">
-                We Are A Vibrant Community Of Korean-Canadian McGill
-                Undergraduates.
-              </Label>
+              <div className="w-full my-2 lg:my-4 px-6 lg:px-32">
+                <Label className="text-base text-gray-500 ">
+                  We Are A Vibrant Community Of Korean-Canadian McGill
+                  Undergraduates.
+                </Label>
+              </div>
+
               <div className="flex w-full justify-center">
                 <Button className="w-3/4 px-6 py-2">Join AKCSE McGill</Button>
               </div>
@@ -105,12 +107,12 @@ export default function Home() {
         </div>
 
         {/* Right Side */}
-        <div className="w-full lg:w-1/2 h-fit flex justify-center items-center mt-8 lg:mt-0 lg:translate-y-1/3 lg:-space-x-16">
+        <div className="hidden lg:flex w-full lg:w-1/2 h-fit justify-center items-center mt-8 lg:mt-0 lg:translate-y-1/3 lg:-space-x-16">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="lg:-mt-96"
+            className="lg:-mt-96 ml-14"
           >
             <Image
               src="/mcgill_school_logo.png"
@@ -138,173 +140,35 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="relative mt-12 lg:-mt-10 mb-5 lg:mb-12 overflow-hidden w-full h-16">
-        <div className="flex animate-slideLoop w-full lg:w-[200%] h-full absolute top-0 left-0">
-          {/* Original Content */}
-          <div className="flex space-x-10 h-10 w-[50%]">
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/workstation.png"
-                alt="workstation"
-              />
-              <div className="my-auto">Computer Science</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/learning--v1.png"
-                alt="learning--v1"
-              />
-              <div className="my-auto">Cognitive Science</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/calculator.png"
-                alt="calculator"
-              />
-              <div className="my-auto">Mathematics</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/biotech--v1.png"
-                alt="biotech--v1"
-              />
-              <div className="my-auto">Biochemistry</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/electronics.png"
-                alt="electronics"
-              />
-              <div className="my-auto">Engineering</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/doctors-bag.png"
-                alt="doctors-bag"
-              />
-              <div className="my-auto">Pharmacology</div>
-            </span>
-          </div>
-          {/* Duplicated Content */}
-          <div className="hidden lg:flex space-x-10 h-10 w-[50%]">
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/workstation.png"
-                alt="workstation"
-              />
-              <div className="my-auto">Computer Science</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/learning--v1.png"
-                alt="learning--v1"
-              />
-              <div className="my-auto">Cognitive Science</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/calculator.png"
-                alt="calculator"
-              />
-              <div className="my-auto">Mathematics</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/biotech--v1.png"
-                alt="biotech--v1"
-              />
-              <div className="my-auto">Biochemistry</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-1">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/electronics.png"
-                alt="electronics"
-              />
-              <div className="my-auto">Engineering</div>
-            </span>
-            <span className="flex text-lg font-semibold whitespace-nowrap gap-0.5">
-              <img
-                width="50"
-                height="50"
-                src="https://img.icons8.com/isometric/50/doctors-bag.png"
-                alt="doctors-bag"
-              />
-              <div className="my-auto">Pharmacology</div>
-            </span>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        className="hidden lg:flex justify-center mb-7"
+        initial={{ opacity: 0.6, scale: 1 }}
+        animate={{
+          opacity: [0.6, 1, 0.6],
+          scale: [1, 1.2, 1],
+          boxShadow: [
+            "0 0 0px rgba(255,255,255,0)",
+            "0 0 8px rgba(255,255,255,0.8)",
+            "0 0 0px rgba(255,255,255,0)",
+          ],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          repeatType: "loop",
+        }}
+      >
+        <LiaArrowDownSolid size={24} className="text-gray-400" />
+      </motion.div>
 
-      <section className="flex flex-col w-full h-fit px-4 lg:px-8">
-        {/* Top Content: Two sections stacked on mobile, side-by-side on md+ */}
-        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 w-full h-fit mt-10">
-          {/* Top Section (mobile) / Left Column (desktop) */}
-          <div className="h-fit flex justify-center items-center">
-            <RotateNews />
-          </div>
-
-          {/* Bottom Section (mobile) / Right Column (desktop) */}
-          <div className="flex flex-col w-full h-fit justify-center items-center">
-            <motion.div
-              initial={{ opacity: 1 }}
-              animate={{ opacity: [1, 0.5, 1] }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-              }}
-            >
-              <div className="flex w-full justify-center items-center gap-2 mt-20 md:mt-0">
-                <Label className="text-xl md:text-2xl font-outfit font-bold">
-                  Check Out Our News
-                </Label>
-                <div className="mt-1.5">
-                  <LiaArrowDownSolid size={20} className="md:text-[25px]" />
-                </div>
-              </div>
-            </motion.div>
-
-            <div className="flex w-full h-fit justify-center items-center mt-4">
-              {/* Responsive image: full width on mobile, up to 600px on desktop */}
-              <Image
-                src="/akcsebition.png"
-                alt="AKCSEBITION"
-                height={600}
-                width={600}
-                className="object-cover w-full max-w-[600px]"
-              />
-            </div>
-          </div>
-        </div>
-
+      <section className="flex flex-col w-full h-fit px-4 lg:px-8 mt-10 lg:mt-0">
         {/* "What Is AKCSE?" Section */}
-        <div className="flex flex-col w-full h-fit space-y-3 text-center mt-28 md:mt-44">
+        <div className="flex flex-col w-full h-fit space-y-3 text-center mt-10">
           <Label className="w-full text-xl md:text-2xl font-outfit font-bold">
             What Is AKCSE?
           </Label>
-          <div className="mx-auto w-full md:w-2/3">
-            <Label className="font-outfit text-base md:text-lg leading-relaxed">
+          <div className="mx-auto w-5/6">
+            <Label className="font-outfit text-base leading-relaxed">
               {/* Your long description text */}
               The Association of Korean-Canadian Scientists and Engineers
               (AKCSE) is a non-profit organization established in 1986. It
@@ -330,7 +194,7 @@ export default function Home() {
       </section>
 
       {/* Latest news */}
-      <section className="flex flex-col w-full mt-20 lg:mt-40 mb-10 lg:mb-28 justify-center items-center text-center">
+      <section className="flex flex-col w-full mt-24 mb-10 lg:mb-28 justify-center items-center text-center">
         <Label className="text-2xl font-outfit font-bold">Latest Events</Label>
         <div className="flex flex-wrap mt-2 gap-3">
           {events.map((event, index) => (
