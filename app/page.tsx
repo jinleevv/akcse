@@ -7,6 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { LiaArrowDownSolid } from "react-icons/lia";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 const schemaData = {
   "@context": "https://schema.org",
@@ -100,7 +101,13 @@ export default function Home() {
               </div>
 
               <div className="flex w-full justify-center">
-                <Button className="w-3/4 px-6 py-2">Join AKCSE McGill</Button>
+                <Link
+                  href="https://linktr.ee/akcsemcgill"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-3/4 px-6 py-2">Join AKCSE McGill</Button>
+                </Link>
               </div>
             </div>
           </motion.div>
@@ -235,8 +242,20 @@ export default function Home() {
         </div>
         {/* Icons Section */}
         <div className="flex justify-center mt-4 space-x-6">
-          <FaInstagram className="text-2xl text-gray-700 hover:text-gray-900 cursor-pointer" />
-          <FaLinkedin className="text-2xl text-gray-700 hover:text-gray-900 cursor-pointer" />
+          <Link
+            href="https://www.instagram.com/akcse_mcgill/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-2xl text-gray-700 hover:text-gray-900 cursor-pointer" />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/showcase/akcse-mcgill/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="text-2xl text-gray-700 hover:text-gray-900 cursor-pointer" />
+          </Link>
         </div>
       </footer>
     </>
