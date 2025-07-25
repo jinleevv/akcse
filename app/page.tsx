@@ -148,26 +148,28 @@ export default function Home() {
         </div>
       </section>
 
-      <motion.div
-        className="hidden lg:flex justify-center mb-7 -mt-12"
-        initial={{ opacity: 0.6, scale: 1 }}
-        animate={{
-          opacity: [0.6, 1, 0.6],
-          scale: [1, 1.2, 1],
-          boxShadow: [
-            "0 0 0px rgba(255,255,255,0)",
-            "0 0 8px rgba(255,255,255,0.8)",
-            "0 0 0px rgba(255,255,255,0)",
-          ],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          repeatType: "loop",
-        }}
-      >
-        <LiaArrowDownSolid size={24} className="text-gray-400" />
-      </motion.div>
+      <div className="hidden lg:flex justify-center mb-7 -mt-12">
+        <motion.span
+          initial={{ opacity: 0.6, scale: 1 }}
+          animate={{
+            opacity: [0.6, 1, 0.6],
+            scale: [1, 1.2, 1],
+            boxShadow: [
+              "0 0 0px rgba(255,255,255,0)",
+              "0 0 8px rgba(255,255,255,0.8)",
+              "0 0 0px rgba(255,255,255,0)",
+            ],
+          }}
+          transition={{
+            duration: 2,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+          className="inline-block"
+        >
+          <LiaArrowDownSolid size={24} className="text-gray-400" />
+        </motion.span>
+      </div>
 
       <section className="flex flex-col w-full h-fit px-4 lg:px-8 mt-10 lg:mt-0">
         {/* "What Is AKCSE?" Section */}
