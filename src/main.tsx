@@ -4,8 +4,8 @@ import App from "./App";
 import Home from "@/pages/Home";
 // import About from "@/pages/About"
 import Events from "@/pages/Events";
-import Executives from "@/pages/Executives"
-import Projects from "@/pages/Projects"
+import Executives from "@/pages/Executives";
+import Projects from "@/pages/Projects";
 import "./index.css";
 
 const router = createBrowserRouter([

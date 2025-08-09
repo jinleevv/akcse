@@ -222,23 +222,28 @@ export default function Timeline() {
         </div>
         <div className="grid grid-cols-2 w-full h-full">
           <div className="mt-5">
-            <Label>{events[selectedEvent].description}</Label>
+            <Label className="text-md">
+              {events[selectedEvent].description}
+            </Label>
             <br />
             <br />
             {events[selectedEvent].registrationForm !== "" ? (
               <>
-                <Label>Registration Form: </Label>
-                <a
-                  href={events[selectedEvent].registrationForm}
-                  className="underline"
-                >
-                  <Label>Link</Label>
-                </a>
-                <br />
-                <Label>Registration Deadline: </Label>
-                <Label className="underline font-bold">
-                  {events[selectedEvent].deadline}
-                </Label>
+                <div className="flex gap-1">
+                  <Label className="font-bold">Registration Form: </Label>
+                  <a
+                    href={events[selectedEvent].registrationForm}
+                    className="underline"
+                  >
+                    <Label>Link</Label>
+                  </a>
+                </div>
+                <div className="flex gap-1 mt-2">
+                  <Label className="font-bold">Registration Deadline: </Label>
+                  <Label className="font-bold">
+                    {events[selectedEvent].deadline}
+                  </Label>
+                </div>
               </>
             ) : (
               <></>

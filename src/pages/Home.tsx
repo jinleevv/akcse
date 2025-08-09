@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full">
-        <div className="container mx-auto px-4 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="container mx-auto px-4 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center font-outfit">
           {/* Left side background glow */}
           <div className="absolute w-1/2 h-72 bg-[#dba35a] blur-[140px] -z-10"></div>
 

@@ -26,7 +26,7 @@ export const executiveMembers: Executive[] = [
     info: {
       jinwon: {
         major: "Computer Science",
-        mbti: "ENTJ",
+        mbti: "ENFJ",
         intro:
           "Hiii! I'm a U3 student at McGill U. I enjoy web development and 3D modeling because it lets me be creative. When I'm not doing projects, I play music and shred the slopes :)",
         instagram: "https://www.instagram.com/jinleevv/",
