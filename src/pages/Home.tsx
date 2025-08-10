@@ -46,7 +46,7 @@ export default function Home() {
               Welcome To
             </Label>
 
-            <div className="h-56 w-56 md:h-80 md:w-80 lg:w-2/3 lg:h-2/3 -mt-10 -mb-10 md:-mt-28 md:-mb-28">
+            <div className="h-56 w-56 md:h-80 md:w-80 lg:w-2/3 lg:h-2/3 -mt-10 -mb-10 md:-mt-20 md:-mb-20">
               <img
                 src="/AKCSE_McGill.png"
                 alt="AKCSE McGill"
