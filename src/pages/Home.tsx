@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <>
       <section className="w-full">
-        <div className="container mx-auto px-4 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 md:gap-56 items-center font-outfit">
+        <div className="w-full px-6 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 md:gap-56 items-center font-outfit">
           {/* Left side background glow */}
           <div className="absolute w-1/2 h-72 bg-[#dba35a] blur-[140px] -z-10 md:-ml-24"></div>
 
@@ -46,7 +46,7 @@ export default function Home() {
               Welcome To
             </Label>
 
-            <div className="h-56 w-56 md:h-80 md:w-80 lg:w-2/3 lg:h-2/3 -mt-10 -mb-10 md:-mt-20 md:-mb-20">
+            <div className="h-56 w-56 md:h-80 md:w-80 lg:w-2/3 lg:h-2/3 -mt-10 -mb-10 md:-mt-20 md:-mb-20 2xl:-mt-28 2xl:-mb-28">
               <img
                 src="/AKCSE_McGill.png"
                 alt="AKCSE McGill"
