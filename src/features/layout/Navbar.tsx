@@ -20,7 +20,7 @@ const navMenuItems = [
 export default function Navbar() {
   return (
     <nav className="flex w-full justify-between p-3 mt-4 lg:mt-0 border-b">
-      <Link to="/" className="-mt-7 h-12 w-24 block">
+      <Link to="/" className="-mt-5 h-12 w-24 block">
         <img
           src="/AKCSE_McGill.png"
           height={120}
