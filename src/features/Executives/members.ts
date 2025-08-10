@@ -17,7 +17,7 @@ export interface Executive {
   };
 }
 
-export const executiveMembers: Executive[] = [
+export const executiveMembers2024_25: Executive[] = [
   {
     icon: "💎",
     label: "Co-Presidents",
@@ -192,8 +192,9 @@ function loadImagesForMember(executiveMembers: Executive[]) {
 
       // Example: Assume there are 3 images per member, adjust as needed
       for (let i = 1; i <= 3; i++) {
-        const imagePath = `/executives/${firstName}/image${i}.jpg`;
-        images.push(imagePath);
+        // Add more imagePath per year
+        const imagePath2024_25 = `/executives/20242025/${firstName}/image${i}.jpg`;
+        images.push(imagePath2024_25);
       }
 
       // Store images in the dictionary with the member's first name as the key
@@ -202,7 +203,7 @@ function loadImagesForMember(executiveMembers: Executive[]) {
   });
 }
 
-loadImagesForMember(executiveMembers);
+loadImagesForMember(executiveMembers2024_25);
 
 export const [pres, communications, finance, events, external, internal, fyr] =
-  executiveMembers;
+  executiveMembers2024_25;

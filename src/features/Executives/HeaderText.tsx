@@ -9,7 +9,7 @@ export default function HearderText() {
       transition={{ duration: 0.2, ease: "easeOut" }}
     >
       <Label className="text-3xl">AKCSE McGill Executives</Label>
-      <Label className="text-lg">2024-2025 Executive Members</Label>
+      <Label className="text-lg">Executive Members</Label>
     </motion.div>
   );
 }

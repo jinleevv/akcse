@@ -1,8 +1,14 @@
-import { executiveMembers } from "./members";
+import { type Executive } from "./members";
 import { LiaInstagram, LiaLinkedin, LiaGithub } from "react-icons/lia";
 import { motion } from "framer-motion";
 
-export default function ExecutiveMembers() {
+type ExecutiveMembersProps = {
+  executives: Executive[]; // <- array
+};
+
+export default function ExecutiveMembers({
+  executives,
+}: ExecutiveMembersProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}
@@ -10,7 +16,7 @@ export default function ExecutiveMembers() {
       transition={{ duration: 0.2, ease: "easeOut" }}
       className="-mt-4 w-full flex flex-col space-y-10"
     >
-      {executiveMembers.map((role) => (
+      {executives.map((role) => (
         <section key={role.label}>
           {/* Section heading */}
           <h2 className="flex items-center gap-3 text-2xl font-bold mb-4">
