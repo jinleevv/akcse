@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import MobileNav from "./MobileNavbar";
 import { MenuLink } from "./MenuLink";
 

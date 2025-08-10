@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
 import { BsGithub } from "react-icons/bs";
-import { useNavigate } from "react-router-dom";
 
 const projectsInfo = {
   AKCSE_McGill_Website: {
@@ -46,18 +45,16 @@ const projectsInfo = {
 };
 
 export default function ProjectsDisplay() {
-  const navigate = useNavigate();
-
   return (
-    <section className="grid lg:grid-cols-2 w-full h-full gap-3">
+    <section className="grid md:grid-cols-2 w-full h-full gap-3">
       {Object.entries(projectsInfo).map(([projectName, details]) => (
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-          className="flex w-full rounded-lg border-1 p-10"
+          className="grid md:flex w-full rounded-lg border-1 p-4 md:p-10"
         >
-          <div className="w-1/3 shrink-0">
+          <div className="w-full md:w-1/3 shrink-0">
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
               <img
                 src={details.image}
@@ -66,25 +63,28 @@ export default function ProjectsDisplay() {
               />
             </div>
           </div>
-          <div className="flex flex-col w-2/3 h-full space-y-3">
+          <div className="flex flex-col w-full md:w-2/3 h-full space-y-3">
             <div className="flex w-full gap-1">
               <Label className="font-bold">Project: </Label>
               <Label>{details.project}</Label>
             </div>
-            <div className="flex items-start gap-1">
+            <div className="items-start">
               <span className="text-sm font-bold whitespace-nowrap leading-normal">
                 Contributors:
               </span>
-              <span className="text-sm font-medium leading-normal">
+              <span className="ml-1 text-sm font-medium leading-normal">
                 {details.contributers}
               </span>
             </div>
-            <div className="flexx w-full h-full items-start">
-              <Label className="flex items-start font-medium leading-normal">
-                <strong>Description:</strong> {details.description}
-              </Label>
+            <div className="items-start">
+              <span className="text-sm font-bold whitespace-nowrap leading-normal">
+                Description:
+              </span>
+              <span className="ml-1 text-sm font-medium leading-normal">
+                {details.description}
+              </span>
             </div>
-            <div className="flex w-full h-full mt-4 -mb-4 justify-end">
+            <div className="flex w-full h-full mt-4 md:-mb-4 justify-end">
               <a href={details.link} target="_blank" rel="noreferrer">
                 <Button variant="ghost" className="rounded-full border">
                   <BsGithub />

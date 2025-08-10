@@ -31,9 +31,9 @@ export default function Home() {
   return (
     <>
       <section className="w-full">
-        <div className="container mx-auto px-4 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center font-outfit">
+        <div className="container mx-auto px-4 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-2 md:gap-56 items-center font-outfit">
           {/* Left side background glow */}
-          <div className="absolute w-1/2 h-72 bg-[#dba35a] blur-[140px] -z-10"></div>
+          <div className="absolute w-1/2 h-72 bg-[#dba35a] blur-[140px] -z-10 md:-ml-24"></div>
 
           {/* Left content */}
           <motion.div
@@ -46,7 +46,7 @@ export default function Home() {
               Welcome To
             </Label>
 
-            <div className="h-56 w-56 md:h-80 md:w-80 lg:w-2/3 lg:h-2/3 -mt-28 -mb-28">
+            <div className="h-56 w-56 md:h-80 md:w-80 lg:w-2/3 lg:h-2/3 -mt-10 -mb-10 md:-mt-28 md:-mb-28">
               <img
                 src="/AKCSE_McGill.png"
                 alt="AKCSE McGill"
@@ -76,7 +76,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex justify-center"
+            className="hidden lg:flex justify-center"
           >
             <div className="relative w-full max-w-lg">
               {/* subtle glow */}
