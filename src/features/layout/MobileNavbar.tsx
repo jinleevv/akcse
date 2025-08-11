@@ -46,8 +46,8 @@ export default function MobileNav() {
       <SheetContent side="right" className="w-1/2 max-w-none bg-white p-2">
         <SheetHeader className="flex items-center justify-between mt-12 space-y-0">
           <SheetTitle>AKCSE McGill</SheetTitle>
-          <SheetDescription className="text-xs">
-            AKCSE YG Chapter Events & Resources
+          <SheetDescription className="text-xs text-center -mt-1 leading-none">
+            YG McGill Chapter Events & Resources
           </SheetDescription>
         </SheetHeader>
 

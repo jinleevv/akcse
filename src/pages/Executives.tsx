@@ -10,7 +10,7 @@ export default function Executives() {
         <Label className="text-3xl">AKCSE McGill Executives</Label>
         <Tabs defaultValue="2024-2025" className="w-full">
           <div className="w-full h-full">
-            <TabsList className="flex w-1/5 my-1 mb-10">
+            <TabsList className="flex w-full md:w-1/5 my-1 mb-10">
               <TabsTrigger value="2024-2025">2024–2025</TabsTrigger>
             </TabsList>
 

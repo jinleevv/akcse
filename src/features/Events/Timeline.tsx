@@ -6,7 +6,7 @@ export default function Timeline() {
   return (
     <Tabs defaultValue="2024-2025" className="w-full">
       <div className="w-full h-full">
-        <TabsList className="flex w-1/5 my-1 ml-7">
+        <TabsList className="flex w-full md:w-1/5 my-1 ml-7">
           <TabsTrigger value="2024-2025">2024–2025</TabsTrigger>
           {/* <TabsTrigger value="2025-2026">2025–2026</TabsTrigger> */}
         </TabsList>
