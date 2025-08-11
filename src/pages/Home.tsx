@@ -9,21 +9,21 @@ const events = [
     date: "September 20th 2024",
     description:
       "The event serves as an opportunity to introduce the AKCSE Team, and outline any initiatives for the upcoming academic year.",
-    image: "/activities/ot/image1.jpg",
+    image: "/activities/20242025/ot/image1.jpg",
   },
   {
     title: "🧑‍🏫 YG Seminar 📚",
     date: "October 18th 2024",
     description:
       "The YG seminar invites professionals from different STEM fields such as medicine, IT, engineering, and natural sciences.",
-    image: "/activities/Seminar/image1.jpg",
+    image: "/activities/20242025/Seminar/image1.jpg",
   },
   {
     title: "💡 Ideathon 🤝",
     date: "November 16th 2024",
     description:
       "Students from diverse programs in McGill unleash their creativity and technical skills by brainstorming clever applications and websites.",
-    image: "/activities/Ideathon/image1.jpg",
+    image: "/activities/20242025/Ideathon/image1.jpg",
   },
 ];
 
