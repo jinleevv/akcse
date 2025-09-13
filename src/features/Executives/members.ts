@@ -122,22 +122,6 @@ export const executiveMembers2024_25: Executive[] = [
     },
   },
   {
-    icon: "🌐",
-    label: "VP External",
-    names: ["ChaeYoung Kim"],
-    images: {},
-    info: {
-      chaeyoung: {
-        major: "Anatomy & Cell Biology",
-        mbti: "ESTP",
-        intro:
-          "Hi! I am a U3 student at McGill University, majoring in Anatomy and Cell Biology, with aspirations to pursue a career in medicine. I also love to sing and play guitar.",
-        instagram: "https://www.instagram.com/6.14000/",
-        linkedin: "https://ca.linkedin.com/in/chae-young-kim-a28112268",
-      },
-    },
-  },
-  {
     icon: "🏠",
     label: "VP Internal",
     names: ["KangHyu Lee", "Chaeyeon Kang"],
@@ -161,6 +145,22 @@ export const executiveMembers2024_25: Executive[] = [
           "https://www.instagram.com/w00mpaw/profilecard/?igsh=MTI0YnR2bzF2OWU0dg==",
         linkedin: "https://www.linkedin.com/in/chaeyeon-kang-039a1629a/",
         github: "https://github.com/srcyww",
+      },
+    },
+  },
+  {
+    icon: "🌐",
+    label: "VP External",
+    names: ["ChaeYoung Kim"],
+    images: {},
+    info: {
+      chaeyoung: {
+        major: "Anatomy & Cell Biology",
+        mbti: "ESTP",
+        intro:
+          "Hi! I am a U3 student at McGill University, majoring in Anatomy and Cell Biology, with aspirations to pursue a career in medicine. I also love to sing and play guitar.",
+        instagram: "https://www.instagram.com/6.14000/",
+        linkedin: "https://ca.linkedin.com/in/chae-young-kim-a28112268",
       },
     },
   },
