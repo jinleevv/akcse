@@ -95,7 +95,7 @@ export default function ExecutiveMembers({
                           </div>
 
                           {/* Text */}
-                          <div className="mt-4 flex-1 flex flex-col">
+                          <div className="mt-4 flex flex-col">
                             <span className="font-bold">{fullName}</span>
                             <span className="text-sm">Major: {info.major}</span>
                             <span className="text-sm">MBTI: {info.mbti}</span>
