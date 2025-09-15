@@ -193,7 +193,7 @@ export const executiveMembers2025_26: Executive[] = [
     info: {
       minseo: {
         major: "Biochemistry",
-        mbti: "",
+        mbti: "ENFJ",
         intro:
           "Hello! I'm a U3 Biochemistry student at McGill. I am still exploring my future paths of different options, both research and industry. I am currently looking into forensic toxicology/science and pharmacology. I love taking a walk to explore new places and trying new things I like (jogging and reading at this point!).",
         instagram: "https://www.instagram.com/ldmins_eo/",
@@ -201,7 +201,7 @@ export const executiveMembers2025_26: Executive[] = [
       },
       taewon: {
         major: "Computer Science",
-        mbti: "",
+        mbti: "ISTP",
         intro:
           "Hello, I'm a U4 Computer Science student at McGill. My area of interest is software engineering and machine learning. During my free time I like to play sports and games",
         instagram: "https://www.instagram.com/taewon.hwang_02/",
@@ -217,7 +217,7 @@ export const executiveMembers2025_26: Executive[] = [
     info: {
       ahreum: {
         major: "Computer Science",
-        mbti: "",
+        mbti: "INFJ",
         intro:
           "Hello, I'm a U3 Computer Science student at McGill. My area of interest is Human-Computer Interaction, among a dozen other things. I don't actually have much free time, but I make time to stay active and adventurous with friends.",
         instagram: "https://www.instagram.com/reummmii/",
@@ -233,7 +233,7 @@ export const executiveMembers2025_26: Executive[] = [
     info: {
       garim: {
         major: "Accounting",
-        mbti: "",
+        mbti: "ESTP",
         intro:
           "Hello! I’m a U4 Accounting student at McGill, majoring in accounting. This year I’ll graduate and start my CPA journey. I'm excited to dive into the world of accounting, I’ll be joining Richter. In my free time, I love relaxing while watching YouTube at 2x speed!",
         instagram: "https://www.instagram.com/ldmins_eo/",
@@ -249,7 +249,7 @@ export const executiveMembers2025_26: Executive[] = [
     info: {
       sungji: {
         major: "Chemical Engineering",
-        mbti: "",
+        mbti: "ISTJ",
         intro:
           "Hi, I'm a U3 student in Chemecial engineering at McGill University. Although I'm still exploring which research direction I'd like to specialize in, I am enthusiastic about taking part in scientific research and innovation. In my free time, I love listening to music and playing piano.",
         instagram: "https://www.instagram.com/sallysungjisong/",
@@ -257,7 +257,7 @@ export const executiveMembers2025_26: Executive[] = [
       },
       joongi: {
         major: "Computer Science",
-        mbti: "",
+        mbti: "ESTP",
         intro:
           "Hi, I'm a U1 student majoring in Computer Science AI and this is my second year as an AKCSE executive member. After graduating, I currently plan to pursue a career in quantitative finance. When I'm bored, I watch reels and send them to people.",
         instagram: "https://www.instagram.com/dl.wnsrl/",
@@ -321,7 +321,7 @@ export const executiveMembers2025_26: Executive[] = [
     info: {
       kanghyu: {
         major: "Computer Science",
-        mbti: "",
+        mbti: "INTP",
         intro:
           "Hello,  I'm a U3 student currently majoring in Computer Science and minoring in Psychology. I'm honestly still catching up on a lot of prereqs so my schedule looks like a U2 schedule. I tend to not leave my room and my main hobby is video games.",
         instagram: "https://www.instagram.com/kanghyulee/",
