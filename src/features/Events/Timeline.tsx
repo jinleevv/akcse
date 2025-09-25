@@ -4,11 +4,11 @@ import { events2024_25, events2025_26 } from "./events-data";
 
 export default function Timeline() {
   return (
-    <Tabs defaultValue="2024-2025" className="w-full">
+    <Tabs defaultValue="2025-2026" className="w-full">
       <div className="w-full h-full">
         <TabsList className="flex w-full md:w-1/5 my-1 ml-7">
-          <TabsTrigger value="2024-2025">2024–2025</TabsTrigger>
           <TabsTrigger value="2025-2026">2025–2026</TabsTrigger>
+          <TabsTrigger value="2024-2025">2024–2025</TabsTrigger>
         </TabsList>
 
         <TabsContent value="2024-2025">
