@@ -14,7 +14,7 @@ export default function Events() {
         <Timeline />
       </div>
       <div className="black lg:hidden">
-        <MobileTimeline defaultYear="2024-2025" />
+        <MobileTimeline defaultYear="2025-2026" />
       </div>
     </section>
   );

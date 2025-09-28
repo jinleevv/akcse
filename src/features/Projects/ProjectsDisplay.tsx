@@ -55,7 +55,7 @@ export default function ProjectsDisplay() {
           className="grid md:flex w-full rounded-lg border-1 p-4 md:p-10"
         >
           <div className="w-full md:w-1/3 shrink-0">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
+            <div className="-ml-10 -mt-10 relative aspect-[4/3] overflow-hidden rounded-lg">
               <img
                 src={details.image}
                 alt={projectName}
@@ -76,15 +76,15 @@ export default function ProjectsDisplay() {
                 {details.contributers}
               </span>
             </div>
-            <div className="items-start">
+            {/* <div className="items-start">
               <span className="text-sm font-bold whitespace-nowrap leading-normal">
                 Description:
               </span>
               <span className="ml-1 text-sm font-medium leading-normal">
                 {details.description}
               </span>
-            </div>
-            <div className="flex w-full h-full mt-4 md:-mb-4 justify-end">
+            </div> */}
+            <div className="flex w-full h-full md:-mb-2 justify-end">
               <a href={details.link} target="_blank" rel="noreferrer">
                 <Button variant="ghost" className="rounded-full border">
                   <BsGithub />

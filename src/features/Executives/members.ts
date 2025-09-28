@@ -122,22 +122,6 @@ export const executiveMembers2024_25: Executive[] = [
     },
   },
   {
-    icon: "🌐",
-    label: "VP External",
-    names: ["ChaeYoung Kim"],
-    images: {},
-    info: {
-      chaeyoung: {
-        major: "Anatomy & Cell Biology",
-        mbti: "ESTP",
-        intro:
-          "Hi! I am a U3 student at McGill University, majoring in Anatomy and Cell Biology, with aspirations to pursue a career in medicine. I also love to sing and play guitar.",
-        instagram: "https://www.instagram.com/6.14000/",
-        linkedin: "https://ca.linkedin.com/in/chae-young-kim-a28112268",
-      },
-    },
-  },
-  {
     icon: "🏠",
     label: "VP Internal",
     names: ["KangHyu Lee", "Chaeyeon Kang"],
@@ -165,6 +149,22 @@ export const executiveMembers2024_25: Executive[] = [
     },
   },
   {
+    icon: "🌐",
+    label: "VP External",
+    names: ["ChaeYoung Kim"],
+    images: {},
+    info: {
+      chaeyoung: {
+        major: "Anatomy & Cell Biology",
+        mbti: "ESTP",
+        intro:
+          "Hi! I am a U3 student at McGill University, majoring in Anatomy and Cell Biology, with aspirations to pursue a career in medicine. I also love to sing and play guitar.",
+        instagram: "https://www.instagram.com/6.14000/",
+        linkedin: "https://ca.linkedin.com/in/chae-young-kim-a28112268",
+      },
+    },
+  },
+  {
     icon: "🎓",
     label: "First Year Representative",
     names: ["Joongi Lee"],
@@ -184,7 +184,155 @@ export const executiveMembers2024_25: Executive[] = [
   },
 ];
 
-function loadImagesForMember(executiveMembers: Executive[]) {
+export const executiveMembers2025_26: Executive[] = [
+  {
+    icon: "💎",
+    label: "Co-Presidents",
+    names: ["Minseo Park", "Taewon Hwang"],
+    images: {},
+    info: {
+      minseo: {
+        major: "Biochemistry",
+        mbti: "ENFJ",
+        intro:
+          "Hello! I'm a U3 Biochemistry student at McGill. I am still exploring my future paths of different options, both research and industry. I am currently looking into forensic toxicology/science and pharmacology. I love taking a walk to explore new places and trying new things I like (jogging and reading at this point!).",
+        instagram: "https://www.instagram.com/ldmins_eo/",
+        linkedin: "https://www.linkedin.com/in/minseo-park-18295528b/",
+      },
+      taewon: {
+        major: "Computer Science",
+        mbti: "ISTP",
+        intro:
+          "Hello, I'm a U4 Computer Science student at McGill. My area of interest is software engineering and machine learning. During my free time I like to play sports and games",
+        instagram: "https://www.instagram.com/taewon.hwang_02/",
+        linkedin: "https://www.linkedin.com/in/taewonhwang/",
+      },
+    },
+  },
+  {
+    icon: "👩‍🎓",
+    label: "Senior Advisor",
+    names: ["Ahreum Lee"],
+    images: {},
+    info: {
+      ahreum: {
+        major: "Computer Science",
+        mbti: "INFJ",
+        intro:
+          "Hello, I'm a U3 Computer Science student at McGill. My area of interest is Human-Computer Interaction, among a dozen other things. I don't actually have much free time, but I make time to stay active and adventurous with friends.",
+        instagram: "https://www.instagram.com/reummmii/",
+        linkedin: "https://www.linkedin.com/in/ahreum-lee-1190a7215/",
+      },
+    },
+  },
+  {
+    icon: "📢",
+    label: "VP Communications",
+    names: ["Garim Yoo"],
+    images: {},
+    info: {
+      garim: {
+        major: "Accounting",
+        mbti: "ESTP",
+        intro:
+          "Hello! I’m a U4 Accounting student at McGill, majoring in accounting. This year I’ll graduate and start my CPA journey. I'm excited to dive into the world of accounting, I’ll be joining Richter. In my free time, I love relaxing while watching YouTube at 2x speed!",
+        instagram: "https://www.instagram.com/ldmins_eo/",
+        linkedin: "https://www.linkedin.com/in/minseo-park-18295528b/",
+      },
+    },
+  },
+  {
+    icon: "🏦",
+    label: "VP Finance",
+    names: ["Sungji Song", "Joongi Lee"],
+    images: {},
+    info: {
+      sungji: {
+        major: "Chemical Engineering",
+        mbti: "ISTJ",
+        intro:
+          "Hi, I'm a U3 student in Chemecial engineering at McGill University. Although I'm still exploring which research direction I'd like to specialize in, I am enthusiastic about taking part in scientific research and innovation. In my free time, I love listening to music and playing piano.",
+        instagram: "https://www.instagram.com/sallysungjisong/",
+        linkedin: "https://www.linkedin.com/in/sally-song-8718a5293/",
+      },
+      joongi: {
+        major: "Computer Science",
+        mbti: "ESTP",
+        intro:
+          "Hi, I'm a U1 student majoring in Computer Science AI and this is my second year as an AKCSE executive member. After graduating, I currently plan to pursue a career in quantitative finance. When I'm bored, I watch reels and send them to people.",
+        instagram: "https://www.instagram.com/dl.wnsrl/",
+        linkedin: "www.linkedin.com/in/joongi-lee-96864a326",
+      },
+    },
+  },
+  {
+    icon: "🎉",
+    label: "VP Events",
+    names: ["Chaeyeon Kang", "Juyoun Bae", "Suelynn Lee"],
+    images: {},
+    info: {
+      chaeyeon: {
+        major: "Cognitive Neuroscience",
+        mbti: "",
+        intro:
+          "Hello! I’m a U3 Cognitive Neuroscience student at McGill. My interests lie in medical science and understanding its impact on the human mind and body. Outside of academics, I love playing games and watching movies.",
+        instagram: "https://www.instagram.com/ch0r0mii/",
+        linkedin: "https://www.linkedin.com/in/chaeyeon-kang-039a1629a/",
+      },
+      juyoun: {
+        major: "Bioengineering",
+        mbti: "",
+        intro:
+          "Hello, my name is Juyoun and Im a U3 bioengineering student at McGill. I am passionate about biomanufacturing and I wish to learn more about the commerical aspect of the health care industry. I enjoy running and playing tennis in my free time.",
+        instagram: "",
+        linkedin: "https://www.linkedin.com/in/juyoun-bae-1984b41a1/",
+      },
+      suelynn: {
+        major: "Honours Mathematics",
+        mbti: "",
+        intro:
+          "Hello!! I'm a U3 Mathematics student at McGill. My field of interest currently lies in algebra and number theory. When I'm not in class, you will probably find me somewhere in the Burnside Hall. Outside of school, I enjoy playing the violin and listening to classical music!",
+        instagram: "https://www.instagram.com/asuelynn_lee/",
+        linkedin: "https://www.linkedin.com/in/suelynn-lee/",
+      },
+    },
+  },
+  {
+    icon: "🌐",
+    label: "VP External",
+    names: ["Myeongjin Lee"],
+    images: {},
+    info: {
+      myeongjin: {
+        major: "Computer Science",
+        mbti: "",
+        intro:
+          "Hi, my name is Myeongjin. I’m a U2 Computer Science student, and I like playing soccer and video games",
+        instagram: "https://www.instagram.com/mj1234501/",
+        linkedin: "https://www.linkedin.com/in/myeongjin-lee-273096335/",
+      },
+    },
+  },
+  {
+    icon: "🏠",
+    label: "VP Internal",
+    names: ["KangHyu Lee"],
+    images: {},
+    info: {
+      kanghyu: {
+        major: "Computer Science",
+        mbti: "INTP",
+        intro:
+          "Hello,  I'm a U3 student currently majoring in Computer Science and minoring in Psychology. I'm honestly still catching up on a lot of prereqs so my schedule looks like a U2 schedule. I tend to not leave my room and my main hobby is video games.",
+        instagram: "https://www.instagram.com/kanghyulee/",
+        linkedin: "www.linkedin.com/in/kang-hyu-lee-7796a2332",
+        github: "https://github.com/kanghyu-lee",
+      },
+    },
+  },
+];
+
+function loadImagesForMember24_25(executiveMembers: Executive[]) {
   executiveMembers.forEach((position) => {
     position.names.forEach((name) => {
       const firstName = name.split(" ")[0].toLowerCase(); // Use first name as key
@@ -202,8 +350,27 @@ function loadImagesForMember(executiveMembers: Executive[]) {
     });
   });
 }
+function loadImagesForMember25_26(executiveMembers: Executive[]) {
+  executiveMembers.forEach((position) => {
+    position.names.forEach((name) => {
+      const firstName = name.split(" ")[0].toLowerCase(); // Use first name as key
+      const images: string[] = [];
 
-loadImagesForMember(executiveMembers2024_25);
+      // Example: Assume there are 3 images per member, adjust as needed
+      for (let i = 1; i <= 3; i++) {
+        // Add more imagePath per year
+        const imagePath2024_25 = `/executives/20252026/${firstName}/image${i}.jpg`;
+        images.push(imagePath2024_25);
+      }
+
+      // Store images in the dictionary with the member's first name as the key
+      position.images[name] = images;
+    });
+  });
+}
+
+loadImagesForMember24_25(executiveMembers2024_25);
+loadImagesForMember25_26(executiveMembers2025_26);
 
 export const [pres, communications, finance, events, external, internal, fyr] =
   executiveMembers2024_25;
