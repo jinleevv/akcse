@@ -5,25 +5,25 @@ import { LiaArrowDownSolid } from "react-icons/lia";
 
 const events = [
   {
-    title: "✨ 2024 - 2025 Orientation Night ✨",
-    date: "September 20th 2024",
+    title: "✨ 2025 - 2026 Orientation Night ✨",
+    date: "September 19th 2025",
     description:
-      "The event serves as an opportunity to introduce the AKCSE Team, and outline any initiatives for the upcoming academic year.",
-    image: "/activities/20242025/ot/image1.jpg",
+      "The McGill Welcome Orientation, hosted by AKCSE and KSA, features a full lineup of food, music, and networking to kick off your university life..",
+    image: "/activities/20252026/ot/image2.jpg",
   },
   {
-    title: "🧑‍🏫 YG Seminar 📚",
-    date: "October 18th 2024",
+    title: "⛺️ MTL Korean Youth Camp",
+    date: "August 30 - August 31st 2025",
     description:
-      "The YG seminar invites professionals from different STEM fields such as medicine, IT, engineering, and natural sciences.",
-    image: "/activities/20242025/Seminar/image1.jpg",
+      "The Montreal Korean Youth Camp offers networking and career counseling opportunities with mentors from various fields, along with informative programs such as McGill campus tours, seminars, and discussions.",
+    image: "/activities/20252026/Youth Camp/image2.jpg",
   },
   {
-    title: "💡 Ideathon 🤝",
-    date: "November 16th 2024",
+    title: "🎓 CKC 2025",
+    date: "July 27th - August 1st 2025",
     description:
-      "Students from diverse programs in McGill unleash their creativity and technical skills by brainstorming clever applications and websites.",
-    image: "/activities/20242025/Ideathon/image1.jpg",
+      "CKC is an annual international conference co-hosted by AKCSE and KOFST (Korean Frederation of Science and Technology Societies).",
+    image: "/activities/20242025/CKC/image1.jpg",
   },
 ];
 
