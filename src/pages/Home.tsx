@@ -2,24 +2,26 @@ import { motion } from "framer-motion";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { LiaArrowDownSolid } from "react-icons/lia";
+import type { EventsDetails } from "@/features/Events/TimelineYear";
 
-const events = [
+
+const events : EventsDetails[] = [
   {
-    title: "✨ 2025 - 2026 Orientation Night ✨",
+    event: "✨ 2025 - 2026 Orientation Night ✨",
     date: "September 19th 2025",
     description:
       "The McGill Welcome Orientation, hosted by AKCSE and KSA, features a full lineup of food, music, and networking to kick off your university life..",
     image: "/activities/20252026/ot/image2.jpg",
   },
   {
-    title: "⛺️ MTL Korean Youth Camp",
+    event: "⛺️ MTL Korean Youth Camp",
     date: "August 30 - August 31st 2025",
     description:
       "The Montreal Korean Youth Camp offers networking and career counseling opportunities with mentors from various fields, along with informative programs such as McGill campus tours, seminars, and discussions.",
     image: "/activities/20252026/Youth Camp/image2.jpg",
   },
   {
-    title: "🎓 CKC 2025",
+    event: "🎓 CKC 2025",
     date: "July 27th - August 1st 2025",
     description:
       "CKC is an annual international conference co-hosted by AKCSE and KOFST (Korean Frederation of Science and Technology Societies).",
@@ -157,13 +159,13 @@ export default function Home() {
                 {/* Image Placeholder */}
                 <img
                   src={event.image}
-                  alt={event.title}
+                  alt={event.event}
                   width={320}
                   height={192}
                   className="w-11/12 lg:w-full h-72 object-cover rounded-md mx-auto"
                 />
                 {/* Title */}
-                <h3 className="mt-4 text-lg font-bold">{event.title}</h3>
+                <h3 className="mt-4 text-lg font-bold">{event.event}</h3>
 
                 {/* Date */}
                 <p className="mt-2 text-sm text-gray-500">{event.date}</p>

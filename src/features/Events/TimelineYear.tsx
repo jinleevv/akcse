@@ -7,12 +7,13 @@ export interface EventsDetails {
   event: string;
   date: string;
   description: string;
-  image1: string;
-  image2: string;
-  image3: string;
-  registrationForm: string;
-  deadline: string;
-  icon: string;
+  image? : string;
+  image1?: string;
+  image2?: string;
+  image3?: string;
+  registrationForm?: string;
+  deadline?: string;
+  icon?: string;
 }
 
 type TimelineYearProps = {
@@ -121,9 +122,9 @@ export default function TimelineYear({
 
           <div className="w-full h-full p-3 md:-mt-20">
             <ActivityPictures
-              image1={events[selectedEvent].image1}
-              image2={events[selectedEvent].image2}
-              image3={events[selectedEvent].image3}
+              image1={events[selectedEvent].image1 ?? ""}
+              image2={events[selectedEvent].image2 ?? ""}
+              image3={events[selectedEvent].image3 ?? ""}
               selectedEvent={selectedEvent}
             />
           </div>
