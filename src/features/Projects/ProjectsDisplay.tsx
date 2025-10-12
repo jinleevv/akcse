@@ -3,7 +3,17 @@ import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
 import { BsGithub } from "react-icons/bs";
 
-const projectsInfo = {
+interface Project {
+  image: string;
+  project: string;
+  contributers: string;
+  purpose: string;
+  achievements: string;
+  description: string;
+  link: string;
+}
+
+const projectsInfo : Record<string, Project> = {
   AKCSE_McGill_Website: {
     image: "/AKCSE_McGill.png",
     project: "AKCSE McGill Website",
@@ -76,14 +86,6 @@ export default function ProjectsDisplay() {
                 {details.contributers}
               </span>
             </div>
-            {/* <div className="items-start">
-              <span className="text-sm font-bold whitespace-nowrap leading-normal">
-                Description:
-              </span>
-              <span className="ml-1 text-sm font-medium leading-normal">
-                {details.description}
-              </span>
-            </div> */}
             <div className="flex w-full h-full md:-mb-2 justify-end">
               <a href={details.link} target="_blank" rel="noreferrer">
                 <Button variant="ghost" className="rounded-full border">
