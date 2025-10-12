@@ -5,17 +5,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { Label } from "@/components/ui/label";
-
-export interface EventsDetails {
-  event: string;
-  date: string;
-  description: string;
-  image1: string;
-  image2: string;
-  image3: string;
-  registrationForm: string;
-  icon: string;
-}
+import type { EventsDetails } from "./TimelineYear";
 
 type Props = { events: Record<string, EventsDetails> };
 
