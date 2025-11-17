@@ -210,22 +210,6 @@ export const executiveMembers2025_26: Executive[] = [
     },
   },
   {
-    icon: "📢",
-    label: "VP Communications",
-    names: ["Garim Yoo"],
-    images: {},
-    info: {
-      garim: {
-        major: "Accounting",
-        mbti: "ESTP",
-        intro:
-          "Hello! I’m a U4 Accounting student at McGill, majoring in accounting. This year I’ll graduate and start my CPA journey. I'm excited to dive into the world of accounting, I’ll be joining Richter. In my free time, I love relaxing while watching YouTube at 2x speed!",
-        instagram: "https://www.instagram.com/ldmins_eo/",
-        linkedin: "https://www.linkedin.com/in/minseo-park-18295528b/",
-      },
-    },
-  },
-  {
     icon: "🏦",
     label: "VP Finance",
     names: ["Sungji Song", "Joongi Lee"],
@@ -311,6 +295,22 @@ export const executiveMembers2025_26: Executive[] = [
         instagram: "https://www.instagram.com/kanghyulee/",
         linkedin: "www.linkedin.com/in/kang-hyu-lee-7796a2332",
         github: "https://github.com/kanghyu-lee",
+      },
+    },
+  },
+  {
+    icon: "📢",
+    label: "VP Communications",
+    names: ["Garim Yoo"],
+    images: {},
+    info: {
+      garim: {
+        major: "Accounting",
+        mbti: "ESTP",
+        intro:
+          "Hello! I’m a U4 Accounting student at McGill, majoring in accounting. This year I’ll graduate and start my CPA journey. I'm excited to dive into the world of accounting, I’ll be joining Richter. In my free time, I love relaxing while watching YouTube at 2x speed!",
+        instagram: "https://www.instagram.com/ldmins_eo/",
+        linkedin: "https://www.linkedin.com/in/minseo-park-18295528b/",
       },
     },
   },
