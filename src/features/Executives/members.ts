@@ -210,22 +210,6 @@ export const executiveMembers2025_26: Executive[] = [
     },
   },
   {
-    icon: "👩‍🎓",
-    label: "Senior Advisor",
-    names: ["Ahreum Lee"],
-    images: {},
-    info: {
-      ahreum: {
-        major: "Computer Science",
-        mbti: "INFJ",
-        intro:
-          "Hello, I'm a U3 Computer Science student at McGill. My area of interest is Human-Computer Interaction, among a dozen other things. I don't actually have much free time, but I make time to stay active and adventurous with friends.",
-        instagram: "https://www.instagram.com/reummmii/",
-        linkedin: "https://www.linkedin.com/in/ahreum-lee-1190a7215/",
-      },
-    },
-  },
-  {
     icon: "📢",
     label: "VP Communications",
     names: ["Garim Yoo"],
@@ -333,7 +317,7 @@ export const executiveMembers2025_26: Executive[] = [
   {
     icon: "🎓",
     label: "First Year Representative",
-    names: ["Eunoo Choi", "Seongwon Jung"],
+    names: ["Eunoo Choi"],
     images: {},
     info: {
       eunoo: {
@@ -343,14 +327,6 @@ export const executiveMembers2025_26: Executive[] = [
           "Hi, I'm a U1 student majoring in Materials engineering. I enjoy playing and watching sports, especially baseball and soccer.",
         instagram: "https://www.instagram.com/eunoo.c._05",
         linkedin: "https://www.linkedin.com/in/eunoo-choi-710164391/",
-      },
-      seongwon: {
-        major: "(U0) BSc foundation program",
-        mbti: "ISFJ",
-        intro:
-          "Hello! I am a U0 student in the BSc foundation program, and I aim to major in Immunology in the future. My hobbies include cooking, playing video games and listening to music!",
-        instagram: "https://www.instagram.com/__won2s",
-        linkedin: "",
       },
     },
   },
