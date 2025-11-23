@@ -4,8 +4,7 @@ import { Button } from "@/components/ui/button";
 import { LiaArrowDownSolid } from "react-icons/lia";
 import type { EventsDetails } from "@/features/Events/TimelineYear";
 
-
-const events : EventsDetails[] = [
+const events: EventsDetails[] = [
   {
     event: "✨ 2025 - 2026 Orientation Night ✨",
     date: "September 19th 2025",
@@ -21,11 +20,11 @@ const events : EventsDetails[] = [
     image: "/activities/20252026/Youth Camp/image2.jpg",
   },
   {
-    event: "🎓 CKC 2025",
-    date: "July 27th - August 1st 2025",
+    event: "🚀 CV/Resume Workshop",
+    date: "November 15th 2025",
     description:
-      "CKC is an annual international conference co-hosted by AKCSE and KOFST (Korean Frederation of Science and Technology Societies).",
-    image: "/activities/20242025/CKC/image1.jpg",
+      "Mentors from AKCSE YP Chapter will help you refine your CV or résumé with real feedback and examples.",
+    image: "/activities/20252026/cvworkshop/image1.jpg",
   },
 ];
 
