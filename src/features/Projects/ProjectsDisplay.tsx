@@ -43,7 +43,7 @@ const projectsInfo : Record<string, Project> = {
     image: "/projects/orally/image1.jpg",
     project: "Orally",
     contributers:
-      "Emma Sihyun Lee, Yoon Choi, Minhui Roh, Taewon Hwang, Tevin Choi",
+      "Emma Sihyun Lee, Yoon Choi, Minhui Roh, Taewon Hwang, Tevin Choi, Chaeyoung Kim, Chaeyeon Kang, Dayoon Chang, Sarah Hwang, Hannah Cho",
     purpose:
       "Many people are hesitant to visit their dentist due to dentophobia or the high cost of treatments, making it even more difficult for them to learn about oral health and manage their conditions. Orofacial pain can be exceptionally excruciating. It is, therefore, important to assess this pain in a timely manner to ensure that appropriate treatment is delivered promptly. Seeking medical help as soon as possible is crucial since the orofacial pain they suffer could also be a symptom of referred pain from other body parts.",
     achievements:
