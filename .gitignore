@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Images (kept locally, not in repo)
+*.jpg
+*.jpeg
+*.png
