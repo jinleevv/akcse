@@ -341,7 +341,7 @@ function loadImagesForMember24_25(executiveMembers: Executive[]) {
       // Example: Assume there are 3 images per member, adjust as needed
       for (let i = 1; i <= 3; i++) {
         // Add more imagePath per year
-        const imagePath2024_25 = `/executives/20242025/${firstName}/image${i}.jpg`;
+        const imagePath2024_25 = `/executives/20242025/${firstName}/image${i}.webp`;
         images.push(imagePath2024_25);
       }
 
@@ -359,7 +359,7 @@ function loadImagesForMember25_26(executiveMembers: Executive[]) {
       // Example: Assume there are 3 images per member, adjust as needed
       for (let i = 1; i <= 3; i++) {
         // Add more imagePath per year
-        const imagePath2024_25 = `/executives/20252026/${firstName}/image${i}.jpg`;
+        const imagePath2024_25 = `/executives/20252026/${firstName}/image${i}.webp`;
         images.push(imagePath2024_25);
       }
 

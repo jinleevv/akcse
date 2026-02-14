@@ -12,7 +12,7 @@ export default function ProjectsInfo() {
       >
         <Label className="text-lg">AKCSE McGill Website</Label> <br />
         <img
-          src="/projects/akcseWebsite/image1.jpg"
+          src="/projects/akcseWebsite/image1.webp"
           width={400}
           height={400}
           alt="AKCSE Website"
@@ -62,7 +62,7 @@ export default function ProjectsInfo() {
       >
         <Label className="text-lg">Ed Block</Label> <br />
         <img
-          src="/projects/akcseWebsite/edblock.jpg"
+          src="/projects/akcseWebsite/edblock.webp"
           width={400}
           height={400}
           alt="AKCSE Website"

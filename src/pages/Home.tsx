@@ -10,21 +10,21 @@ const events: EventsDetails[] = [
     date: "September 19th 2025",
     description:
       "The McGill Welcome Orientation, hosted by AKCSE and KSA, features a full lineup of food, music, and networking to kick off your university life..",
-    image: "/activities/20252026/ot/image2.jpg",
+    image: "/activities/20252026/ot/image2.webp",
   },
   {
     event: "⛺️ MTL Korean Youth Camp",
     date: "August 30 - August 31st 2025",
     description:
       "The Montreal Korean Youth Camp offers networking and career counseling opportunities with mentors from various fields, along with informative programs such as McGill campus tours, seminars, and discussions.",
-    image: "/activities/20252026/Youth Camp/image2.jpg",
+    image: "/activities/20252026/Youth Camp/image2.webp",
   },
   {
     event: "🚀 CV/Resume Workshop",
     date: "November 15th 2025",
     description:
       "Mentors from AKCSE YP Chapter will help you refine your CV or résumé with real feedback and examples.",
-    image: "/activities/20252026/cvworkshop/image1.jpg",
+    image: "/activities/20252026/cvworkshop/image1.webp",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function Home() {
 
             <div className="h-56 w-56 md:h-80 md:w-80 lg:w-2/3 lg:h-2/3 -mt-10 -mb-10 md:-mt-20 md:-mb-20 2xl:-mt-28 2xl:-mb-28">
               <img
-                src="/AKCSE_McGill.png"
+                src="/AKCSE_McGill.webp"
                 alt="AKCSE McGill"
                 className="object-cover scale-150"
               />
@@ -83,7 +83,7 @@ export default function Home() {
               {/* subtle glow */}
               <div className="aspect-square overflow-hidden rounded-full shadow-xl">
                 <img
-                  src="/mcgill_landscape.jpg"
+                  src="/mcgill_landscape.webp"
                   alt="McGill Building"
                   className="h-full w-full object-cover"
                 />

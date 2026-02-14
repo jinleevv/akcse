@@ -15,7 +15,7 @@ interface Project {
 
 const projectsInfo : Record<string, Project> = {
   AKCSE_McGill_Website: {
-    image: "/AKCSE_McGill.png",
+    image: "/AKCSE_McGill.webp",
     project: "AKCSE McGill Website",
     contributers:
       "Jinwon Lee, Taewon Hwang, Dana Lee, Ahreum Lee, Junsoo Kim, Dowoo Kim, KangHyu Lee",
@@ -28,7 +28,7 @@ const projectsInfo : Record<string, Project> = {
     link: "https://github.com/jinleevv/akcse",
   },
   Ed_Block: {
-    image: "/projects/edblock/image1.jpg",
+    image: "/projects/edblock/image1.webp",
     project: "Ed Block",
     contributers: "Taewon Hwang, Ahreum Lee, Chaeyeon Kang, Seol Han",
     purpose:
@@ -40,7 +40,7 @@ const projectsInfo : Record<string, Project> = {
     link: "https://github.com/TaewonHwang02/Akcse_project2024",
   },
   Orally: {
-    image: "/projects/orally/image1.jpg",
+    image: "/projects/orally/image1.webp",
     project: "Orally",
     contributers:
       "Emma Sihyun Lee, Yoon Choi, Minhui Roh, Taewon Hwang, Tevin Choi, Chaeyoung Kim, Chaeyeon Kang, Dayoon Chang, Sarah Hwang, Hannah Cho",

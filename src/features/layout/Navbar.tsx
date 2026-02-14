@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className="flex w-full justify-between p-3 mt-4 lg:mt-0 border-b">
       <Link to="/" className="-mt-5 h-12 w-24 block">
         <img
-          src="/AKCSE_McGill.png"
+          src="/AKCSE_McGill.webp"
           height={120}
           width={120}
           alt="AKCSE McGill"
