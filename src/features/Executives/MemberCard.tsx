@@ -82,7 +82,7 @@ export function MemberCard({
         </div>
 
         {/* Divider */}
-        <div className="w-10 h-1 bg-gray-200 rounded-full mb-6 group-hover:bg-blue-500 transition-colors duration-300"></div>
+        <div className="w-10 h-1 bg-gray-200 rounded-full mb-6 group-hover:bg-orange-700 transition-colors duration-300"></div>
 
         {/* Social Actions */}
         <div className="flex gap-4 items-center justify-center mt-auto" onClick={(e) => e.stopPropagation()}>
