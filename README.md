@@ -1,7 +1,7 @@
 # AKCSE McGill Website
 
 <p align="center">
-  <img src="public/AKCSE_McGill.png" alt="AKCSE Logo" width="200" height="180"/>
+  <img src="public/AKCSE_McGill.webp" alt="AKCSE Logo" width="200" height="180"/>
 </p>
 
 ## About the project
