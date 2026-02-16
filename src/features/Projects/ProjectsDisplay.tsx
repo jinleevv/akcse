@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
-import { BsGithub } from "react-icons/bs";
+import { ProjectCard } from "./ProjectCard";
 
 interface Project {
   image: string;
@@ -56,46 +54,25 @@ const projectsInfo : Record<string, Project> = {
 
 export default function ProjectsDisplay() {
   return (
-    <section className="grid md:grid-cols-2 w-full h-full gap-3">
-      {Object.entries(projectsInfo).map(([projectName, details]) => (
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-          className="grid md:flex w-full rounded-lg border-1 p-4 md:p-10"
-        >
-          <div className="w-full md:w-1/3 shrink-0">
-            <div className="-ml-10 -mt-10 relative aspect-[4/3] overflow-hidden rounded-lg">
-              <img
-                src={details.image}
-                alt={projectName}
-                className="absolute inset-0 h-full w-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="flex flex-col w-full md:w-2/3 h-full space-y-3">
-            <div className="flex w-full gap-1">
-              <Label className="font-bold">Project: </Label>
-              <Label>{details.project}</Label>
-            </div>
-            <div className="items-start">
-              <span className="text-sm font-bold whitespace-nowrap leading-normal">
-                Contributors:
-              </span>
-              <span className="ml-1 text-sm font-medium leading-normal">
-                {details.contributers}
-              </span>
-            </div>
-            <div className="flex w-full h-full md:-mb-2 justify-end">
-              <a href={details.link} target="_blank" rel="noreferrer">
-                <Button variant="ghost" className="rounded-full border">
-                  <BsGithub />
-                </Button>
-              </a>
-            </div>
-          </div>
-        </motion.div>
-      ))}
-    </section>
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
+      className="w-full h-full p-4 md:p-10"
+    >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+        {Object.entries(projectsInfo).map(([projectName, details]) => (
+          <ProjectCard
+            key={projectName}
+            image={details.image}
+            title={details.project}
+            contributors={details.contributers}
+            // Combining purpose and description or just using description as main text
+            description={details.description} 
+            link={details.link}
+          />
+        ))}
+      </div>
+    </motion.section>
   );
 }
