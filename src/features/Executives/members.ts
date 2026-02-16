@@ -204,7 +204,7 @@ export const executiveMembers2025_26: Executive[] = [
         mbti: "ISTP",
         intro:
           "Hello, I'm a U4 Computer Science student at McGill. My area of interest is software engineering and machine learning. During my free time I like to play sports and games",
-        instagram: "https://www.instagram.com/taewon.hwang_02/",
+        instagram: "https://www.instagram.com/taewon.hwang02/",
         linkedin: "https://www.linkedin.com/in/taewonhwang/",
       },
     },
