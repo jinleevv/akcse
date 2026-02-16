@@ -241,7 +241,7 @@ export const executiveMembers2025_26: Executive[] = [
     info: {
       chaeyeon: {
         major: "Cognitive Neuroscience",
-        mbti: "",
+        mbti: "INFJ",
         intro:
           "Hello! I’m a U3 Cognitive Neuroscience student at McGill. My interests lie in medical science and understanding its impact on the human mind and body. Outside of academics, I love playing games and watching movies.",
         instagram: "https://www.instagram.com/ch0r0mii/",
@@ -249,7 +249,7 @@ export const executiveMembers2025_26: Executive[] = [
       },
       juyoun: {
         major: "Bioengineering",
-        mbti: "",
+        mbti: "ESFJ",
         intro:
           "Hello, my name is Juyoun and Im a U3 bioengineering student at McGill. I am passionate about biomanufacturing and I wish to learn more about the commerical aspect of the health care industry. I enjoy running and playing tennis in my free time.",
         instagram: "",
@@ -257,7 +257,7 @@ export const executiveMembers2025_26: Executive[] = [
       },
       suelynn: {
         major: "Honours Mathematics",
-        mbti: "",
+        mbti: "ENTP",
         intro:
           "Hello!! I'm a U3 Mathematics student at McGill. My field of interest currently lies in algebra and number theory. When I'm not in class, you will probably find me somewhere in the Burnside Hall. Outside of school, I enjoy playing the violin and listening to classical music!",
         instagram: "https://www.instagram.com/asuelynn_lee/",
@@ -317,7 +317,7 @@ export const executiveMembers2025_26: Executive[] = [
   {
     icon: "🎓",
     label: "First Year Representative",
-    names: ["Eunoo Choi"],
+    names: ["Eunoo Choi", "Seongwon Jung"],
     images: {},
     info: {
       eunoo: {
@@ -327,6 +327,13 @@ export const executiveMembers2025_26: Executive[] = [
           "Hi, I'm a U1 student majoring in Materials engineering. I enjoy playing and watching sports, especially baseball and soccer.",
         instagram: "https://www.instagram.com/eunoo.c._05",
         linkedin: "https://www.linkedin.com/in/eunoo-choi-710164391/",
+      },
+      seongwon: {
+        major: "BSc foundation program",
+        mbti: "ISFJ",
+        intro: "Hello! I am a U0 student in the BSc foundation program, and I aim to major in Immunology in the future. My hobbies include cooking, playing video games and listening to music!",
+        instagram: "https://www.instagram.com/__won2s",
+        linkedin: "",
       },
     },
   },
