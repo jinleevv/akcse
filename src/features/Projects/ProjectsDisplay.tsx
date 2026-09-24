@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
 import { ProjectCard } from "./ProjectCard";
 
 interface Project {
   image: string;
   project: string;
-  contributers: string;
+  contributors: string;
+  category: string;
   purpose: string;
   achievements: string;
   description: string;
@@ -15,7 +15,8 @@ const projectsInfo : Record<string, Project> = {
   AKCSE_McGill_Website: {
     image: "/AKCSE_McGill.webp",
     project: "AKCSE McGill Website",
-    contributers:
+    category: "Web development",
+    contributors:
       "Jinwon Lee, Taewon Hwang, Dana Lee, Ahreum Lee, Junsoo Kim, Dowoo Kim, KangHyu Lee",
     purpose:
       "It aims to provide an platform where members can be easily updated with AKCSE events. It also encourages the members to contribute to the website to familiarize them with GitHub and web development. This project will ultimately create a community where members can learn to collaborate and improve their skill sets.",
@@ -28,7 +29,8 @@ const projectsInfo : Record<string, Project> = {
   Ed_Block: {
     image: "/projects/edblock/image1.webp",
     project: "Ed Block",
-    contributers: "Taewon Hwang, Ahreum Lee, Chaeyeon Kang, Seol Han",
+    category: "Machine learning",
+    contributors: "Taewon Hwang, Ahreum Lee, Chaeyeon Kang, Seol Han",
     purpose:
       "Eating disorders (EDs) are a growing public health concern, significantly impacting individuals' physical, psychological, and emotional well-being. Studies show a rise in ED prevalence, particularly among younger demographics, with media playing a critical role in exacerbating these disorders. This project aims to address this issue by developing censoring tool that limits media content related to extreme diets, creating a safer online environment for vulnerable individuals, especially young audiences.",
     achievements:
@@ -40,7 +42,8 @@ const projectsInfo : Record<string, Project> = {
   Orally: {
     image: "/projects/orally/image1.webp",
     project: "Orally",
-    contributers:
+    category: "Health & technology",
+    contributors:
       "Emma Sihyun Lee, Yoon Choi, Minhui Roh, Taewon Hwang, Tevin Choi, Chaeyoung Kim, Chaeyeon Kang, Dayoon Chang, Sarah Hwang, Hannah Cho",
     purpose:
       "Many people are hesitant to visit their dentist due to dentophobia or the high cost of treatments, making it even more difficult for them to learn about oral health and manage their conditions. Orofacial pain can be exceptionally excruciating. It is, therefore, important to assess this pain in a timely manner to ensure that appropriate treatment is delivered promptly. Seeking medical help as soon as possible is crucial since the orofacial pain they suffer could also be a symptom of referred pain from other body parts.",
@@ -54,25 +57,38 @@ const projectsInfo : Record<string, Project> = {
 
 export default function ProjectsDisplay() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
-      className="w-full h-full p-4 md:p-10"
-    >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+    <section id="explore-projects" className="scroll-mt-8 border-t border-gray-100 pt-8" aria-labelledby="project-collection-title">
+      <div className="mb-7 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+        <div>
+          <p className="mb-2.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-gray-500">
+            Made by our community
+          </p>
+          <h2 id="project-collection-title" className="text-3xl font-semibold tracking-tight">
+            Small beginnings. <span className="text-orange-700">Real possibilities.</span>
+          </h2>
+          <p className="mt-3 text-sm text-gray-500">
+            Meet the projects, the ideas behind them, and the people who made them happen.
+          </p>
+        </div>
+        <span className="shrink-0 text-xs text-gray-500">
+          {Object.keys(projectsInfo).length} projects to explore
+        </span>
+      </div>
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {Object.entries(projectsInfo).map(([projectName, details]) => (
           <ProjectCard
             key={projectName}
             image={details.image}
             title={details.project}
-            contributors={details.contributers}
-            // Combining purpose and description or just using description as main text
-            description={details.description} 
+            category={details.category}
+            contributors={details.contributors}
+            description={details.description}
+            purpose={details.purpose}
+            achievements={details.achievements}
             link={details.link}
           />
         ))}
       </div>
-    </motion.section>
+    </section>
   );
 }

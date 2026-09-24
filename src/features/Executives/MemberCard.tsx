@@ -1,15 +1,8 @@
 import { useState } from "react";
+import PhotoCount from "@/components/PhotoCount";
 import { LiaGithub, LiaInstagram, LiaLinkedin } from "react-icons/lia";
 import { MemberModal } from "./MemberModal";
-
-interface MemberInfo {
-  major: string;
-  mbti: string;
-  intro: string;
-  instagram: string;
-  linkedin: string;
-  github?: string;
-}
+import type { MemberInfo } from "./members";
 
 interface MemberCardProps {
   name: string;
@@ -39,12 +32,17 @@ export function MemberCard({
       >
         {/* Avatar */}
         <div className="relative mb-4">
-          <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-gray-100 ring-2 ring-transparent group-hover:ring-orange-700/20 transition-all duration-300">
+          <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-gray-100 ring-2 ring-transparent group-hover:ring-orange-700/20 transition-all duration-300">
             {avatarImage ? (
               <img 
                 src={avatarImage} 
                 alt={name} 
                 className="w-full h-full object-cover"
+                style={{
+                  objectPosition: info.avatar?.position ?? "50% 50%",
+                  transform: `scale(${info.avatar?.scale ?? 1})`,
+                  transformOrigin: info.avatar?.position ?? "50% 50%",
+                }}
               />
             ) : (
               <div className="w-full h-full bg-gray-100 flex items-center justify-center text-gray-400">
@@ -57,6 +55,20 @@ export function MemberCard({
             {roleIcon}
           </div>
         </div>
+
+        {images.length > 0 && (
+          <button
+            type="button"
+            onClick={(event) => {
+              event.stopPropagation();
+              setIsModalOpen(true);
+            }}
+            aria-label={`View ${images.length} ${images.length === 1 ? "photo" : "photos"} of ${name}`}
+            className="mb-3 cursor-pointer rounded-md border border-gray-100 transition-colors hover:border-orange-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-700"
+          >
+            <PhotoCount count={images.length} className="bg-gray-50 shadow-none" />
+          </button>
+        )}
 
         {/* Name & Role */}
         <h3 className="text-lg font-bold text-gray-800 text-center mb-1">{name}</h3>
@@ -126,6 +138,7 @@ export function MemberCard({
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         name={name}
+        roleLabel={roleLabel}
         images={images}
       />
     </>

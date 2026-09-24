@@ -1,3 +1,17 @@
+export interface MemberInfo {
+  major: string;
+  mbti: string;
+  intro: string;
+  instagram: string;
+  linkedin: string;
+  github?: string;
+  // Adjust only the card portrait; gallery photos keep their original framing.
+  avatar?: {
+    position: string;
+    scale?: number;
+  };
+}
+
 export interface Executive {
   icon: string;
   label: string;
@@ -6,14 +20,7 @@ export interface Executive {
     [name: string]: string[];
   };
   info: {
-    [fullName: string]: {
-      major: string;
-      mbti: string;
-      intro: string;
-      instagram: string;
-      linkedin: string;
-      github?: string;
-    };
+    [fullName: string]: MemberInfo;
   };
 }
 
@@ -321,6 +328,7 @@ export const executiveMembers2025_26: Executive[] = [
     images: {},
     info: {
       eunoo: {
+        avatar: { position: "55% 0%", scale: 1.8 },
         major: "Materials Engineering",
         mbti: "INFJ",
         intro:
@@ -339,45 +347,28 @@ export const executiveMembers2025_26: Executive[] = [
   },
 ];
 
-function loadImagesForMember24_25(executiveMembers: Executive[]) {
+// Discover the available photos so cards and galleries always show the same count.
+const memberPhotos = import.meta.glob<string>(
+  "/public/executives/**/image*.webp",
+  { eager: true, query: "?url", import: "default" },
+);
+
+function loadImagesForMembers(executiveMembers: Executive[], year: string) {
   executiveMembers.forEach((position) => {
     position.names.forEach((name) => {
-      const firstName = name.split(" ")[0].toLowerCase(); // Use first name as key
-      const images: string[] = [];
+      const firstName = name.split(" ")[0].toLowerCase();
+      const directory = `/public/executives/${year}/${firstName}/`;
 
-      // Example: Assume there are 3 images per member, adjust as needed
-      for (let i = 1; i <= 3; i++) {
-        // Add more imagePath per year
-        const imagePath2024_25 = `/executives/20242025/${firstName}/image${i}.webp`;
-        images.push(imagePath2024_25);
-      }
-
-      // Store images in the dictionary with the member's first name as the key
-      position.images[name] = images;
-    });
-  });
-}
-function loadImagesForMember25_26(executiveMembers: Executive[]) {
-  executiveMembers.forEach((position) => {
-    position.names.forEach((name) => {
-      const firstName = name.split(" ")[0].toLowerCase(); // Use first name as key
-      const images: string[] = [];
-
-      // Example: Assume there are 3 images per member, adjust as needed
-      for (let i = 1; i <= 3; i++) {
-        // Add more imagePath per year
-        const imagePath2024_25 = `/executives/20252026/${firstName}/image${i}.webp`;
-        images.push(imagePath2024_25);
-      }
-
-      // Store images in the dictionary with the member's first name as the key
-      position.images[name] = images;
+      position.images[name] = Object.entries(memberPhotos)
+        .filter(([path]) => path.startsWith(directory))
+        .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
+        .map(([, url]) => url);
     });
   });
 }
 
-loadImagesForMember24_25(executiveMembers2024_25);
-loadImagesForMember25_26(executiveMembers2025_26);
+loadImagesForMembers(executiveMembers2024_25, "20242025");
+loadImagesForMembers(executiveMembers2025_26, "20252026");
 
 export const [pres, communications, finance, events, external, internal, fyr] =
   executiveMembers2024_25;
