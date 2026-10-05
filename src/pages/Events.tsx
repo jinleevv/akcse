@@ -1,10 +1,11 @@
 import { ArrowDown, ArrowUpRight, Sparkles } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import ComingSoon from "@/components/ComingSoon";
 import EventCard from "@/features/Events/EventCard";
 import { eventsByYear } from "@/features/Events/events-data";
 import "./Events.css";
 
-const years = (Object.keys(eventsByYear) as (keyof typeof eventsByYear)[]).reverse();
+const years = (Object.keys(eventsByYear) as (keyof typeof eventsByYear)[]).sort().reverse();
 
 export default function Events() {
   return (
@@ -40,22 +41,28 @@ export default function Events() {
               <p>From first hellos to your next big idea. Explore it all.</p>
             </div>
             <TabsList className="events-year-tabs" aria-label="Academic year">
-              {years.map((year) => <TabsTrigger key={year} value={year}>{year.replace("-", "–")}</TabsTrigger>)}
+              {years.map((year) => <TabsTrigger key={year} value={year} className="min-w-0 px-1 text-xs sm:text-sm">{year.replace("-", "–")}</TabsTrigger>)}
             </TabsList>
           </div>
           {years.map((year) => (
             <TabsContent key={year} value={year}>
-              <div className="events-collection-label"><span>{year.replace("-", " / ")} collection</span><span>{Object.keys(eventsByYear[year]).length} events to explore</span></div>
-              <div className="events-grid">
-                {Object.entries(eventsByYear[year]).map(([key, event]) => <EventCard key={key} event={event} title={key} />)}
-              </div>
+              <div className="events-collection-label"><span>{year.replace("-", " / ")} collection</span><span>{Object.keys(eventsByYear[year]).length > 0 ? `${Object.keys(eventsByYear[year]).length} events to explore` : "Updates to come"}</span></div>
+              {Object.keys(eventsByYear[year]).length > 0 ? (
+                <div className="events-grid">
+                  {Object.entries(eventsByYear[year]).map(([key, event]) => <EventCard key={key} event={event} title={key} />)}
+                </div>
+              ) : (
+                <ComingSoon
+                  title={`${year.replace("-", "–")} events`}
+                  description="Our event lineup will be announced here. Check back for updates!"
+                />
+              )}
             </TabsContent>
           ))}
         </Tabs>
         <div className="events-community">
           <div><p className="events-eyebrow">Your next memory starts here</p><h2>Come for an event.<br />Stay for the community.</h2></div>
           <a className="events-primary-link" href="https://www.instagram.com/akcse_mcgill/" target="_blank" rel="noopener noreferrer">Follow us on Instagram <ArrowUpRight size={19} aria-hidden="true" /><span className="sr-only"> (opens in a new tab)</span></a>
-          <Sparkles className="events-community-spark" size={100} aria-hidden="true" />
         </div>
       </section>
     </div>

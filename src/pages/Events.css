@@ -34,7 +34,7 @@
 .events-archive-heading h2 { font-size: 30px; line-height: 1.2; letter-spacing: -.75px; font-weight: 600; }
 .events-archive-heading h2 span { color: var(--events-accent); }
 .events-archive-heading h2 + p { color: #6b7280; font-size: 14px; margin-top: 10px; }
-.events-year-tabs { min-width: 240px; flex-shrink: 0; }
+.events-year-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 384px; max-width: 100%; min-width: 0; height: 44px; flex-shrink: 0; }
 .events-collection-label { display: flex; justify-content: space-between; gap: 16px; padding-block: 18px; border-top: 1px solid #f3f4f6; font-size: 11px; color: #6b7280; }
 .events-collection-label span:first-child { text-transform: uppercase; letter-spacing: 1.3px; font-weight: 500; }
 .events-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
@@ -54,7 +54,6 @@
 .events-community { position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-top: 48px; padding: 32px; border-radius: 12px; background: #fff7ed; }
 .events-community > div, .events-community > a { position: relative; z-index: 1; }
 .events-community h2 { margin-top: 13px; font-size: 30px; line-height: 1.25; letter-spacing: -.75px; font-weight: 600; }
-.events-community-spark { position: absolute; left: 55%; bottom: -20px; color: #fed7aa; transform: rotate(15deg); }
 .event-detail { width: min(760px, calc(100% - 32px)); max-width: 760px; max-height: 90dvh; overflow-y: auto; background: #ffffff; color: #1f2937; padding: 32px; border-radius: 12px; gap: 22px; }
 .event-detail-heading { padding-right: 12px; }
 .event-detail-heading .events-eyebrow { color: #c2410c; margin-bottom: 12px; }

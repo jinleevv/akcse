@@ -339,13 +339,177 @@ export const executiveMembers2025_26: Executive[] = [
       seongwon: {
         major: "BSc foundation program",
         mbti: "ISFJ",
-        intro: "Hello! I am a U0 student in the BSc foundation program, and I aim to major in Immunology in the future. My hobbies include cooking, playing video games and listening to music!",
+        intro:
+          "Hello! I am a U0 student in the BSc foundation program, and I aim to major in Immunology in the future. My hobbies include cooking, playing video games and listening to music!",
         instagram: "https://www.instagram.com/__won2s",
         linkedin: "",
       },
     },
   },
 ];
+
+export const executiveMembers2026_27: Executive[] = [
+  {
+    icon: "💎",
+    label: "President",
+    names: ["Juyoun Bae"],
+    images: {},
+    info: {
+      juyoun: {
+        major: "Bioengineering",
+        mbti: "ESFJ",
+        intro:
+          "Hi everyone! My name is Juyoun, and I'm a U4 Bioengineering student at McGill University. I'm passionate about biomanufacturing and am eager to explore the commercial and business aspects of the healthcare industry. Outside of school, I enjoy running, playing tennis, and meeting new people.",
+        instagram: "https://www.instagram.com/juyoun___/",
+        linkedin: "https://www.linkedin.com/in/juyoun-bae-1984b41a1/",
+      },
+    },
+  },
+  {
+    icon: "🏦",
+    label: "VP Finance",
+    names: ["Jeongbin Shin"],
+    images: {},
+    info: {
+      jeongbin: {
+        major: "Bioengineering",
+        mbti: "ISTJ",
+        intro:
+          "Hi, I'm Jeongbin. I am a U4 student in Bioengineering, developing a background in computational biology. Excited to meet everyone!",
+        instagram: "https://www.instagram.com/juicy_tin/",
+        linkedin: "https://www.linkedin.com/in/jeongbin-shin-6bb242257/",
+      },
+    },
+  },
+  {
+    icon: "🎉",
+    label: "VP Events",
+    names: ["Yelin Eom", "Yerin Shin", "Hyoeun Lee"],
+    images: {},
+    info: {
+      yelin: {
+        major: "Electrical Engineering",
+        mbti: "ESTJ",
+        intro:
+          "Hi, I'm Yelin. I am a U3 student in Electrical Engineering at McGill. Excited for upcoming school year!",
+        instagram: "https://www.instagram.com/yxxlinx/",
+        linkedin: "https://www.linkedin.com/in/yelin-eom",
+      },
+      yerin: {
+        major: "Cognitive Science",
+        mbti: "ISTP",
+        intro:
+          "Hi, my name is Yerin (Erin) Shin. I am a U2 student majoring in Cognitive Science. I'm so excited to be part of this community and look forward to creating lots of fun events this year!",
+        instagram: "https://www.instagram.com/yerinerinshin/",
+        linkedin: "",
+      },
+      hyoeun: {
+        major: "Computer Science and Biology",
+        mbti: "ENTP",
+        intro:
+          "Hi, my name is Hyoeun (Emma)! I am a U3 Biology and Computer Scinece student passionate about functional genomics research. In my free time, I love to spend time with my cats, discover new music, and spend time with friends",
+        instagram: "https://www.instagram.com/seaahorsee/",
+        linkedin: "https://www.linkedin.com/in/emma-lee-344a38214/",
+      },
+    },
+  },
+  {
+    icon: "🌐",
+    label: "VP External",
+    names: ["Myeongjin Lee"],
+    images: {},
+    info: {
+      myeongjin: {
+        major: "Computer Science",
+        mbti: "",
+        intro:
+          "Hi nice to meet you my name is Myeongjin. I study cs and i like to play soccer",
+        instagram: "https://www.instagram.com/mj1234501/",
+        linkedin: "https://www.linkedin.com/in/myeongjin-lee-273096335/",
+      },
+    },
+  },
+  {
+    icon: "🏠",
+    label: "VP Internal",
+    names: ["Junghyun Joshua Lim"],
+    images: {},
+    info: {
+      junghyun: {
+        major: "Microbiology and Immunology",
+        mbti: "INTP",
+        intro: "Hi, I am Joshua. I am a U2 MIMM student passionate in immunology. I hope to study deeper in research at McGill University. I play piano in my spare time and I like to sleep.",
+        instagram: "https://www.instagram.com/limonade4211/",
+        linkedin: "https://www.linkedin.com/in/junghyun-joshua-lim-39061640a/",
+      },
+    },
+  },
+  {
+    icon: "📢",
+    label: "VP Communications",
+    names: ["Morgane Maucorps, Jooyoung Choi"],
+    images: {},
+    info: {
+      morgane: {
+        major: "Mechanical engineering (Aerospace engineering)",
+        mbti: "",
+        intro: "Hey, my name is Nara (or Morgane), and I'm in U1 Mechanical Engineering. I am a French-Korean from Paris!",
+        instagram: "https://www.instagram.com/morgane.mcps/",
+        linkedin: "https://www.linkedin.com/in/morgane-maucorps-9a7915349?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      },
+      jooyoung: {
+        major: "Nursing (BScN)",
+        mbti: "ENTP",
+        intro: "Hi I'm Jooyoung. I am a U2 student in Nursing. I am also very interested in biochemistry/biomed eng to the point I'm thinking of doing a minor despite the many many hours of mandatory hospital shifts. I love hanging out with people and I'm pretty chill so hit me up anytime I am so down for anything.",
+        instagram: "https://www.instagram.com/jojobebe812/",
+        linkedin: "",
+      },
+    },
+  },
+    {
+    icon: "💳",
+    label: "VP Membership",
+    names: ["Dongyoung Kim"],
+    images: {},
+    info: {
+      dongyoung: {
+        major: "Anatomy and Cell Biology",
+        mbti: "INTP",
+        intro: "Hello, I'm Dongyoung, U3 McGill student, Anatomy and Cell Biology major. I chose this major, because I'm interested in the medical field and health policy, and I am also interested in neuroscience, specifically field of artificial neurons. And I enjoy sports outside of school :)",
+        instagram: "https://www.instagram.com/dongyoung15/",
+        linkedin: "https://www.linkedin.com/in/dongyoung-kim-20b42436b",
+      },
+    },
+  },
+  {
+    icon: "🎓",
+    label: "First Year Representative",
+    names: ["Yunseo Shin", "Dong Gyu Lee"],
+    images: {},
+    info: {
+      yunseo: {
+        major: "Kinesiology",
+        mbti: "ISTP",
+        intro: "Hello! I am Yunseo, and I am currently planning to pursue Kinesiology U1 at McGill University. I am looking forward to find the study field that I am passionate about in university. I like learning new things and traveling new places.",
+        instagram: "https://www.instagram.com/ofj_irv_ro",
+        linkedin: "",
+      },
+      dong: {
+        major: "Anatomy and Cell Biology",
+        mbti: "ESTJ",
+        intro: "Hello, my name is Dong Gyu (Xavier) Lee, and this is my first year at McGill. I am very excited to meet everyone at McGill and pursue anatomy and cell biology! I love soccer and SCUBA diving and meeting new people.",
+        instagram: "https://www.instagram.com/xavier_lee1024",
+        linkedin: "https://www.linkedin.com/in/dong-gyu-lee-8a832b373",
+      },
+    },
+  },
+];
+
+export const executiveMembersByYear = {
+  "2024-2025": executiveMembers2024_25,
+  "2025-2026": executiveMembers2025_26,
+  "2026-2027": executiveMembers2026_27,
+} satisfies Record<string, Executive[]>;
 
 // Discover the available photos so cards and galleries always show the same count.
 const memberPhotos = import.meta.glob<string>(
@@ -369,6 +533,7 @@ function loadImagesForMembers(executiveMembers: Executive[], year: string) {
 
 loadImagesForMembers(executiveMembers2024_25, "20242025");
 loadImagesForMembers(executiveMembers2025_26, "20252026");
+loadImagesForMembers(executiveMembers2026_27, "20262027");
 
 export const [pres, communications, finance, events, external, internal, fyr] =
   executiveMembers2024_25;

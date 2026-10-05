@@ -191,7 +191,10 @@ export const events2025_26: Record<string, EventsDetails> = {
   },
 };
 
+export const events2026_27: Record<string, EventsDetails> = {};
+
 export const eventsByYear = {
   "2024-2025": events2024_25,
   "2025-2026": events2025_26,
+  "2026-2027": events2026_27,
 } satisfies Record<string, Record<string, EventsDetails>>;
