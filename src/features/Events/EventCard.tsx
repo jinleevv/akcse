@@ -14,7 +14,12 @@ export default function EventCard({ event, title }: EventCardProps) {
         <DialogTrigger asChild>
           <button className="event-card-trigger" aria-label={`Explore ${title}`}>
             <div className="event-card-photo">
-              {photos[0] && <img src={photos[0]} alt={`${title} at AKCSE`} loading="lazy" />}
+              {photos[0] ? <img src={photos[0]} alt={`${title} at AKCSE`} loading="lazy" /> : (
+                <div className="event-card-placeholder">
+                  <CalendarDays size={32} aria-hidden="true" />
+                  <span>Event is coming soon!</span>
+                </div>
+              )}
               <PhotoCount count={photos.length} className="absolute bottom-3 right-3" />
             </div>
             <div className="event-card-copy">

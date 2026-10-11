@@ -43,6 +43,7 @@
 .event-card-trigger { display: flex; flex-direction: column; width: 100%; height: 100%; text-align: left; cursor: pointer; border-radius: inherit; }
 .event-card-photo { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #f9fafb; }
 .event-card-photo > img { width: 100%; height: 100%; object-fit: cover; transition: transform 350ms; }
+.event-card-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; height: 100%; padding: 24px; background: #fff7ed; color: #c2410c; text-align: center; font-size: 16px; font-weight: 600; }
 .event-card:hover .event-card-photo > img { transform: scale(1.04); }
 .event-card-copy { display: flex; flex: 1; flex-direction: column; width: 100%; padding: 20px; }
 .event-card-date { display: flex; align-items: center; gap: 7px; color: #6b7280; font-size: 11px; line-height: 1.5; }
