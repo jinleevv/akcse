@@ -215,9 +215,9 @@ export const events2026_27: Record<string, EventsDetails> = {
     date: "October 3rd, 2026",
     description:
       "The Eastern Canada Symposium brings together students and early-career professionals from across Eastern Canada, including GTLO, Ottawa, and Montreal, to connect, share ideas, and explore emerging developments in STEM. The 2026 symposium will be held in Montreal, featuring research presentations, innovative projects, and opportunities for participants to exchange knowledge, build professional connections, and engage with the next generation of STEM research and innovation.",
-    image1: "/activities/20242025/minickc/image3.webp",
-    image2: "/activities/20252026/minickc/image2.webp",
-    image3: "/activities/20242025/minickc/image2.webp",
+    image1: "/activities/20262027/Eastern Canada Symposium/image1.webp",
+    image2: "/activities/20262027/Eastern Canada Symposium/image2.webp",
+    image3: "/activities/20262027/Eastern Canada Symposium/image3.webp",
   },
   "YG-YP Collaborative Christmas Party": {
     event: "YG-YP Collaborative Christmas Party",

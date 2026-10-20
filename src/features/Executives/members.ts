@@ -447,7 +447,7 @@ export const executiveMembers2026_27: Executive[] = [
   {
     icon: "📢",
     label: "VP Communications",
-    names: ["Morgane Maucorps, Jooyoung Choi"],
+    names: ["Morgane Maucorps", "Jooyoung Choi"],
     images: {},
     info: {
       morgane: {
