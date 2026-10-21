@@ -16,7 +16,7 @@ export default function Events() {
       <section className="events-hero events-container" aria-labelledby="events-tagline">
         <div className="events-hero-copy">
           <p className="events-eyebrow"><span /> AKCSE McGill · Life beyond the classroom</p>
-          <h2 id="events-tagline">Have fun.<br />Learn a lot.<br /><span>Make great memories.</span></h2>
+          <h2 id="events-tagline" className="font-outfit">Have fun.<br />Learn a lot.<br /><span>Make great memories.</span></h2>
           <p className="events-intro">Meet your people, try something new, and make your McGill years unforgettable. There’s a little something for everyone.</p>
           <a className="events-primary-link" href="#explore-events">Explore our events <ArrowDown size={18} aria-hidden="true" /></a>
           <div className="events-hero-note"><Sparkles size={17} aria-hidden="true" /> A community to learn, connect, and grow with.</div>

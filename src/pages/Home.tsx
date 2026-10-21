@@ -2,29 +2,23 @@ import { motion } from "framer-motion";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { LiaArrowDownSolid } from "react-icons/lia";
-import type { EventsDetails } from "@/features/Events/TimelineYear";
+import { events2026_27 } from "@/features/Events/events-data";
 
-const events: EventsDetails[] = [
+const events = [
   {
-    event: "✨ 2025 - 2026 Orientation Night ✨",
-    date: "September 19th 2025",
+    ...events2026_27["Eastern Canada Symposium"],
     description:
-      "The McGill Welcome Orientation, hosted by AKCSE and KSA, features a full lineup of food, music, and networking to kick off your university life..",
-    image: "/activities/20252026/ot/image2.webp",
+      "The Eastern Canada Symposium brings students and early-career professionals together in Montreal to share STEM research, exchange ideas, and build connections.",
   },
   {
-    event: "⛺️ MTL Korean Youth Camp",
-    date: "August 30 - August 31st 2025",
+    ...events2026_27["Orientation Night"],
     description:
-      "The Montreal Korean Youth Camp offers networking and career counseling opportunities with mentors from various fields, along with informative programs such as McGill campus tours, seminars, and discussions.",
-    image: "/activities/20252026/Youth Camp/image2.webp",
+      "AKCSE and KSA welcomed new and returning McGill students with food, music, and new connections to kick off the academic year.",
   },
   {
-    event: "🚀 CV/Resume Workshop",
-    date: "November 15th 2025",
+    ...events2026_27["MTL Korean Youth Camp"],
     description:
-      "Mentors from AKCSE YP Chapter will help you refine your CV or résumé with real feedback and examples.",
-    image: "/activities/20252026/cvworkshop/image1.webp",
+      "The two-day Montreal Korean Youth Camp connected students with 16 mentors to explore career paths and gain practical academic and professional guidance.",
   },
 ];
 
@@ -149,15 +143,15 @@ export default function Home() {
       <section className="flex flex-col w-full mt-24 mb-10 lg:mb-28 justify-center items-center text-center">
         <Label className="text-2xl font-outfit font-bold">Latest Events</Label>
         <div className="flex flex-wrap mt-2 gap-3">
-          {events.map((event, index) => (
+          {events.map((event) => (
             <div
-              key={index}
+              key={event.event}
               className="w-full lg:w-[360px] bg-white rounded-md items-center justify-center text-center p-4"
             >
               <div className="w-full h-full justify-center items-center">
                 {/* Image Placeholder */}
                 <img
-                  src={event.image}
+                  src={event.image1}
                   alt={event.event}
                   width={320}
                   height={192}

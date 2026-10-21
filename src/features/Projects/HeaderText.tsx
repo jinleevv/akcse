@@ -10,7 +10,7 @@ export default function HeaderText() {
             <span className="size-1.5 shrink-0 rounded-full bg-orange-700" />
             AKCSE McGill · Ideas in action
           </p>
-          <h2 className="text-4xl font-bold leading-[1.15] tracking-tight sm:text-5xl xl:text-[56px]">
+          <h2 className="font-outfit text-4xl font-bold leading-[1.15] tracking-tight sm:text-5xl xl:text-[56px]">
             Get curious.<br />Build together.<br />
             <span className="text-orange-700">Make a difference.</span>
           </h2>
